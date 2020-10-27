@@ -107,10 +107,9 @@
         }
 
         const WF = () => {
-            document.getElementById("link").href = link[8];
-            document.getElementById("link").innerHTML = link[8];
+            document.getElementById("link").innerHTML = 'brak linku';
             document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[13];
-            document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[8];
+            document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[8] + ', ' + nauczyciel[10];
 
         }
 
