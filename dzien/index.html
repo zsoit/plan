@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="style.css">
+    <title>Plan lekcji 3TI</title>
+
+    <style>
+    * {
+            font-family: arial;
+            white-space: normal !important;
+            word-wrap: break-word;
+        }
+    }
+    .lekcja {
+        color: green;
+    }
+    .lekcja:hover {
+        color: white;
+    }
+    .item {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+    }
+    .item:hover {
+        cursor: pointer;
+        background-color: lightcoral;
+        color: white;
+    }
+    .item:hover>.lekcja {
+        color: white;
+    }
+    #dzien {
+        font-size: 50px;
+    }
+    .info {
+        text-align: left;
+        border: 1px solid black;
+        padding: 10px;
+        width: 300px;
+        /* margin-bottom: 20px; */
+        
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    body {
+        display: flex;
+        /* #justify-content: center; */
+        
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    main {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    h3 {
+        color: chocolate;
+    }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="info">
+        <h3>Aktualna lekcja: </h3>
+        <p id="lekcja"></p>
+        <a id="link" target="_blank" href=""></a>
+        <p id="nauczyciel"></p>
+        <p id="weekday"> </p>
+        <p id="godzina"></p>
+        <p id="hour"></p>
+        <p id="roznica"></p>
+
+        <p id="next"></p>
+    </div>
+
+    <main>
+        <p id="dzien"></p>
+
+        <div class="item item1">
+            <p class="lekcja" id="lekcja1">
+                <div class="h" id="1h"></div>
+            </p>
+        </div>
+
+        <div class="item item2">
+            <p class="lekcja" id="lekcja2">
+                <div class="h" id="2h"></div>
+            </p>
+
+        </div>
+
+        <div class="item item3">
+            <p class="lekcja" id="lekcja3">
+                <div class="h" id="3h"></div>
+            </p>
+
+        </div>
+
+        <div class="item item4">
+            <p class="lekcja" id="lekcja4">
+                <div class="h" id="4h"></div>
+            </p>
+
+        </div>
+
+        <div class="item item5">
+            <p class="lekcja" id="lekcja5">
+                <div class="h" id="5h"></div>
+            </p>
+        </div>
+
+        <div class="item item6">
+
+            <p class="lekcja" id="lekcja6">
+                <div class="h" id="6h"></div>
+            </p>
+        </div>
+
+        <div class="item item7">
+            <p class="lekcja" id="lekcja7">
+                <div class="h" id="7h"></div>
+            </p>
+
+        </div>
+
+        <div class="item item8">
+            <p class="lekcja" id="lekcja8">
+                <div class="h" id="8h"></div>
+            </p>
+        </div>
+    </main>
+
+
+
+
+    <script src="../godziny.js"></script>
+    <script src="../przedmioty.js"></script>
+    <script src="../tablice.js"></script>
+    <script src="../main.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -16,7 +16,9 @@ const lekcja = [
     'Witryny i aplkacje internetowe', //12
     'Wychowanie fizyczne', //13
     'Historia i Społeczeństwo', //14
-    'Lekcja wolna' //15
+    'Lekcja wolna', //15
+    '-----------', //16
+    'Wychowawcza' //17
 ];
 
 const link = [
