@@ -10,13 +10,13 @@ const newDay = () => {
     document.getElementById('5h').innerHTML = '11:30 - 12:15';
     document.getElementById('6h').innerHTML = '12:20 - 13:05';
     document.getElementById('7h').innerHTML = '13:10 - 13:55';
-    document.getElementById('8h').innerHTML = '14:00 - 14:55';
+    document.getElementById('8h').innerHTML = '14:00 - 14:45';
 
 
 
 
     var day = new Date().getDay();
-    // day = 0;
+    // day = 5;
 
     let data = new Date();
     let hour = data.getHours();
@@ -30,15 +30,15 @@ const newDay = () => {
             {
 
                 // alert('Niedziela');
-                document.getElementById('dzien').innerHTML = 'Środa';
-                document.getElementById('lekcja1').innerHTML = "1." + lekcja[0];
-                document.getElementById('lekcja2').innerHTML = "2." + lekcja[2];
-                document.getElementById('lekcja3').innerHTML = "3." + lekcja[5];
-                document.getElementById('lekcja4').innerHTML = "4." + lekcja[4];
-                document.getElementById('lekcja5').innerHTML = "5." + lekcja[8];
-                document.getElementById('lekcja6').innerHTML = "6." + lekcja[7];
-                document.getElementById('lekcja7').innerHTML = lekcja[16];
-                document.getElementById('lekcja8').innerHTML = lekcja[16];
+                document.getElementById('dzien').innerHTML = 'Niedziela';
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[18];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[18];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[18];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[18];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[18];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[18];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[18];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[18];
 
 
                 break;
@@ -46,7 +46,17 @@ const newDay = () => {
         case 1: //Poniedziałek
             {
 
-                alert('Poniedziałek');
+                // alert('Poniedziałek');
+                document.getElementById('dzien').innerHTML = 'Poniedziałek';
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[8];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[5];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[3];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[6];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[11];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[4];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[4];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[14];
+
 
                 break;
 
@@ -55,7 +65,17 @@ const newDay = () => {
             }
         case 2: //Wtorek
             {
-                alert('Piatek');
+                // alert('Wtorek');
+                document.getElementById('dzien').innerHTML = 'Wtorek';
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[6];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[6];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[7];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[8];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[13];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[3];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[2];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[10];
+
                 break;
 
 
@@ -79,17 +99,34 @@ const newDay = () => {
 
             }
 
-
         case 4: //Czwartek
             {
-                alert('Czwartek');
+                // alert('Czwartek');
+                document.getElementById('dzien').innerHTML = 'Czwartek';
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[4];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[6];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[5];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[7];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[13];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[9];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[16];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[16];
 
                 break;
             }
         case 5: //Piatek
             {
 
-                alert('Piątek');
+                document.getElementById('dzien').innerHTML = 'Piątek';
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[7];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[13];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[4];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[10];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[10];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[10];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[9];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[16];
+
 
                 break;
 
@@ -97,7 +134,17 @@ const newDay = () => {
             }
         case 6: //Sobota
             {
-                alert('Sobota')
+                // alert('Sobota')
+                document.getElementById('dzien').innerHTML = 'Sobota';
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[18];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[18];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[18];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[18];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[18];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[18];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[18];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[18];
+
                 break;
             }
     }
@@ -112,3 +159,5 @@ const newDay = () => {
 }
 
 newDay();
+
+// document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[12];

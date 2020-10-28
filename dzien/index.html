@@ -4,72 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="20">
     <link rel="stylesheet" href="style.css">
     <title>Plan lekcji 3TI</title>
 
     <style>
-    * {
+        * {
             font-family: arial;
             white-space: normal !important;
             word-wrap: break-word;
         }
-    }
-    .lekcja {
-        color: green;
-    }
-    .lekcja:hover {
-        color: white;
-    }
-    .item {
-        border: 2px solid black;
-        padding: 10px;
-        margin: 10px;
-        /* width: 300px; */
-    }
-    .item:hover {
-        cursor: pointer;
-        background-color: lightcoral;
-        color: white;
-    }
-    .item:hover>.lekcja {
-        color: white;
-    }
-    #dzien {
-        font-size: 40px;
-    }
-    .info {
-        text-align: left;
-        border: 1px solid black;
-        padding: 10px;
-        width: 300px;
-        /* margin-bottom: 20px; */
         
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
-    body {
-        display: flex;
-        /* #justify-content: center; */
+        .lekcja {
+            color: green;
+        }
         
-        flex-wrap: wrap;
-        margin: 20px;
-    }
-    main {
-        border: 1px solid black;
-        padding: 10px;
-        width: 300px;
-    }
-    h3 {
-        color: chocolate;
-    }
+        .lekcja:hover {
+            color: white;
+        }
+        
+        .item {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            /* width: 300px; */
+        }
+        
+        .item:hover {
+            cursor: pointer;
+            background-color: lightcoral;
+            color: white;
+        }
+        
+        .item:hover>.lekcja {
+            color: white;
+        }
+        
+        #dzien {
+            font-size: 40px;
+        }
+        
+        .info {
+            text-align: left;
+            border: 1px solid black;
+            padding: 10px;
+            width: 350px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        
+        body {
+            display: flex;
+            /* #justify-content: center; */
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        
+        main {
+            border: 1px solid black;
+            padding: 10px;
+            width: 350px;
+        }
+        
+        h3 {
+            color: chocolate;
+        }
     </style>
 </head>
 
 <body>
-
-
-
 
     <div class="info">
         <h3>Aktualna lekcja: </h3>
@@ -145,9 +148,6 @@
             </p>
         </div>
     </main>
-
-
-
 
     <script src="../godziny.js"></script>
     <script src="../przedmioty.js"></script>

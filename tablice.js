@@ -17,8 +17,9 @@ const lekcja = [
     'Wychowanie fizyczne', //13
     'Historia i Społeczeństwo', //14
     'Lekcja wolna', //15
-    '-----------', //16
-    'Wychowawcza' //17
+    '--------------', //16
+    'Wychowawcza', //17
+    'Wolne' //18
 ];
 
 const link = [

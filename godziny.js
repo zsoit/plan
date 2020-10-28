@@ -28,5 +28,5 @@ const godzina7 = () => {
 }
 
 const godzina8 = () => {
-    document.getElementById("godzina").innerHTML = "Lekcja 8: 14:00 - 14:55";
+    document.getElementById("godzina").innerHTML = "Lekcja 8: 14:00 - 14:45";
 }
