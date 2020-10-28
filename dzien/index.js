@@ -16,7 +16,7 @@ const newDay = () => {
 
 
     var day = new Date().getDay();
-    day = 5;
+    // day = 5;
 
     let data = new Date();
     let hour = data.getHours();
