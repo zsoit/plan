@@ -16,7 +16,7 @@ const newDay = () => {
 
 
     var day = new Date().getDay();
-    // day = 5;
+    day = 5;
 
     let data = new Date();
     let hour = data.getHours();
@@ -47,13 +47,14 @@ const newDay = () => {
             {
 
                 // alert('Poniedziałek');
+
                 document.getElementById('dzien').innerHTML = 'Poniedziałek';
-                document.getElementById('lekcja1').innerHTML = "1." + lekcja[8];
-                document.getElementById('lekcja2').innerHTML = "2." + lekcja[5];
-                document.getElementById('lekcja3').innerHTML = "3." + lekcja[3];
-                document.getElementById('lekcja4').innerHTML = "4." + lekcja[6];
-                document.getElementById('lekcja5').innerHTML = "5." + lekcja[11];
-                document.getElementById('lekcja6').innerHTML = "6." + lekcja[4];
+                document.getElementById('lekcja1').innerHTML = "1." + lekcja[15];
+                document.getElementById('lekcja2').innerHTML = "2." + lekcja[8];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[5];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[2];
+                document.getElementById('lekcja5').innerHTML = "5." + lekcja[6];
+                document.getElementById('lekcja6').innerHTML = "6." + lekcja[11];
                 document.getElementById('lekcja7').innerHTML = "7." + lekcja[4];
                 document.getElementById('lekcja8').innerHTML = "8." + lekcja[14];
 
@@ -87,8 +88,8 @@ const newDay = () => {
                 document.getElementById('dzien').innerHTML = 'Środa';
                 document.getElementById('lekcja1').innerHTML = "1." + lekcja[15];
                 document.getElementById('lekcja2').innerHTML = "2." + lekcja[15];
-                document.getElementById('lekcja3').innerHTML = "3." + lekcja[7];
-                document.getElementById('lekcja4').innerHTML = "4." + lekcja[4];
+                document.getElementById('lekcja3').innerHTML = "3." + lekcja[17];
+                document.getElementById('lekcja4').innerHTML = "4." + lekcja[7];
                 document.getElementById('lekcja5').innerHTML = "5." + lekcja[12];
                 document.getElementById('lekcja6').innerHTML = "6." + lekcja[12];
                 document.getElementById('lekcja7').innerHTML = "7." + lekcja[0];
