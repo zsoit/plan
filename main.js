@@ -7,8 +7,8 @@ const weekDay = () => {
     let minute = m.getMinutes();
 
 
-    // hour = 13;
-    // minute = 54;
+    hour = 9;
+    minute = 54;
 
     var day = new Date().getDay();
     // day = 5;
@@ -184,8 +184,12 @@ const weekDay = () => {
                 } else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) { //lekcja3
                     var roznica = (hour * 60 + minute) - (godziny[10] * 60 + minuty[25]);
                     var roznica = -roznica;
-                    document.getElementById('weekday').innerHTML = "Wychowawcza!";
+                    document.getElementById("link").href = link[10];
+                    document.getElementById("link").innerHTML = link[10];
+                    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[17];
+                    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[12];
                     godzina3();
+                    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[12];
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[7];
                     break;
                 } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) { //lekcja4

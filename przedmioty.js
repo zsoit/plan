@@ -120,3 +120,11 @@ const HIS = () => {
     document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[9];
 
 }
+
+// const WCH = () => {
+//     document.getElementById("link").href = link[10];
+//     document.getElementById("link").innerHTML = link[10];
+//     document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[17];
+//     document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[12];
+
+// }
