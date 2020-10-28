@@ -18,6 +18,11 @@ const newDay = () => {
     var day = new Date().getDay();
     // day = 0;
 
+    let data = new Date();
+    let hour = data.getHours();
+    let m = new Date();
+    let minute = m.getMinutes();
+
 
 
     switch (day) {
@@ -67,7 +72,7 @@ const newDay = () => {
                 document.getElementById('lekcja5').innerHTML = "5." + lekcja[12];
                 document.getElementById('lekcja6').innerHTML = "6." + lekcja[12];
                 document.getElementById('lekcja7').innerHTML = "7." + lekcja[0];
-                document.getElementById('lekcja8').innerHTML = "8" + lekcja[0];
+                document.getElementById('lekcja8').innerHTML = "8." + lekcja[0];
 
                 break;
 
@@ -96,6 +101,13 @@ const newDay = () => {
                 break;
             }
     }
+
+    if (minute < 10) {
+        minute = "0" + minute;
+    }
+    document.getElementById('godzina2').innerHTML = "<b>Godzina: </b>" +
+        hour + ":" + minute;
+
 
 }
 
