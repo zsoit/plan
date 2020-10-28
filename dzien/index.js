@@ -66,8 +66,8 @@ const newDay = () => {
                 document.getElementById('lekcja4').innerHTML = "4." + lekcja[4];
                 document.getElementById('lekcja5').innerHTML = "5." + lekcja[12];
                 document.getElementById('lekcja6').innerHTML = "6." + lekcja[12];
-                document.getElementById('lekcja7').innerHTML = lekcja[0];
-                document.getElementById('lekcja8').innerHTML = lekcja[0];
+                document.getElementById('lekcja7').innerHTML = "7." + lekcja[0];
+                document.getElementById('lekcja8').innerHTML = "8" + lekcja[0];
 
                 break;
 
