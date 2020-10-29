@@ -1,4 +1,4 @@
-// alert('cob');
+// PLAN na cały tydzień;
 
 
 const newDay = () => {
@@ -12,19 +12,8 @@ const newDay = () => {
     document.getElementById('7h').innerHTML = '13:10 - 13:55';
     document.getElementById('8h').innerHTML = '14:00 - 14:45';
 
-
-
-
     var day = new Date().getDay();
-    // day = 5;
-
-    let data = new Date();
-    let hour = data.getHours();
-    let m = new Date();
-    let minute = m.getMinutes();
-
-
-
+    // day = 1;
     switch (day) {
         case 0: //Niedziela
             {

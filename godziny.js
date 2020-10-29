@@ -1,4 +1,4 @@
-//GODZINY 
+//GODZINY
 const godzina1 = () => {
     document.getElementById("godzina").innerHTML = "Lekcja 1: 8.00 - 8:45";
 }
