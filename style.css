@@ -1,5 +1,77 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+    font-family: arial;
     white-space: normal !important;
     word-wrap: break-word;
+}
+
+.lekcja {
+    color: green;
+}
+
+.lekcja:hover {
+    color: white;
+}
+
+.item {
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+}
+
+.item:hover>.lekcja {
+    color: white;
+}
+
+#dzien {
+    font-size: 40px;
+}
+
+.info {
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-image: url('img/white-logo-zsoit.png');
+}
+
+main {
+    border: 1px solid black;
+    background-image: url('img/white-background-logo-zsoit.png');
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+h3 {
+    color: chocolate;
+    font-size: 30px;
+}
+
+a,
+a:visited {
+    color: red;
+}
+
+p {
+    font-weight: 500;
+}
+
+#roznica {
+    color: red;
 }
