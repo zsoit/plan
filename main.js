@@ -6,8 +6,8 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    // hour = 8;
-    // minute = 46;
+    // hour = 10;
+    // minute = 25;
 
     var day = new Date().getDay();
     // day = 1;
@@ -376,25 +376,72 @@ const weekDay = () => {
         // } else if (róznica < 0 && roznica < 60) {
         //     roznica = 'Jeszcze lekcja się nie zaczeła!';
     } else if (roznica == undefined) {
-        roznica = 'Lekcja się nie rozpoczeła! 0'
+        roznica = 'Brak lekcji! 0'
 
     } else {
         // roznica = 'Jeszcze lekcja się nie zaczeła!';
         roznica = roznica;
     }
 
-    alert("Zostało: " + roznica + ' min. do końca lekcji');
+    // alert("Zostało: " + roznica + ' min. do końca lekcji');
 
 
 
-    document.getElementById("roznica").innerHTML =
-        "Zostało: " + roznica + ' min. do końca lekcji';
+    // document.getElementById("roznica").innerHTML =
+    //     "Zostało: " + roznica + ' min. do końca lekcji';
 
     //aktualna-godizna
     if (minute < 10) {
         minute = "0" + minute;
     }
     document.getElementById('hour').innerHTML = 'Aktualna godzina: ' + hour + ':' + minute;
+    roznica = roznica + ' min. do końca lekcji';
+
+    //PRZERWA
+    if (hour == 8 && minute >= 45 && minute <= 49 == true) { //przerwa1
+        minute = minute - 50;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 9 && minute >= 35 && minute <= 39 == true) { //przerwa2
+        minute = minute - 40;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 10 && minute >= 25 && minute <= 39 == true) { //przerwa3
+        minute = minute - 40;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 11 && minute >= 25 && minute <= 29 == true) { //przerwa4
+        minute = minute - 30;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 12 && minute >= 15 && minute <= 19) { //przerwa5
+        minute = minute - 20;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 13 && minute >= 5 && minute <= 9) { //przerwa6
+        minute = minute - 10;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 13 && minute >= 55 && minute <= 59) { //przerwa7
+        minute = minute - 60;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 14 && minute >= 45 && minute <= 49) { //przerwa8
+        minute = minute - 50;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do końca przerwy';
+    }
+
+    document.getElementById("roznica").innerHTML =
+        "Zostało: " + roznica;
 
 }
 
