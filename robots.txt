@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://plan.myzsoit.pl/
+Sitemap: https://myzsoit.pl/plan/
