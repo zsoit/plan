@@ -75,3 +75,27 @@ p {
 #roznica {
     color: red;
 }
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding: 12px;
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background-origin: content-box;
+    border: medium none;
+    border-spacing: 0;
+    overflow: visible;
+}
+
+button:focus,
+button:hover {
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: 0;
+}

@@ -6,11 +6,11 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    // hour = 10;
-    // minute = 25;
+    // hour = 8;
+    // minute = 0;
 
     var day = new Date().getDay();
-    // day = 1;
+    // day = 5;
 
     var godziny = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
@@ -29,9 +29,9 @@ const weekDay = () => {
             {
                 // alert('Poniedziałek');
                 document.getElementById('weekday').innerHTML = " Dzień: Poniedziałek";
-                if (hour == 8 && minute > 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
+                if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
                     document.getElementById('weekday').innerHTML = lekcja[15];
-                    var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[50]);
+                    var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     godzina1();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[8];
@@ -97,7 +97,7 @@ const weekDay = () => {
             {
                 // alert('Wtorek')
                 document.getElementById('weekday').innerHTML = " Dzień: Wtorek";
-                if (hour == 8 && minute > 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
+                if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
                     var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     Polski();
@@ -167,8 +167,8 @@ const weekDay = () => {
             {
                 // alert('Środa')
                 document.getElementById('weekday').innerHTML = " Dzień: Środa";
-                if (hour == 8 && minute > 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
-                    var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[50]);
+                if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
+                    var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     document.getElementById('weekday').innerHTML = lekcja[15];
                     godzina1();
@@ -240,7 +240,7 @@ const weekDay = () => {
             {
                 // alert('Czwartek')
                 document.getElementById('weekday').innerHTML = " Dzień: Czwartek";
-                if (hour == 8 && minute > 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
+                if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
                     var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     Angielski();
@@ -294,7 +294,7 @@ const weekDay = () => {
             {
 
                 document.getElementById('weekday').innerHTML = " Dzień: Piątek";
-                if (hour == 8 && minute > 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
+                if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
                     var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     Matematyka();
@@ -438,6 +438,11 @@ const weekDay = () => {
         minute = -minute;
         var przerwa = minute;
         roznica = przerwa + ' min. do końca przerwy';
+    } else if (hour == 7 && minute >= 0 && minute <= 59) { //przerwa-rano-przed-8
+        minute = minute - 60;
+        minute = -minute;
+        var przerwa = minute;
+        roznica = przerwa + ' min. do początku lekcji';
     }
 
     document.getElementById("roznica").innerHTML =
