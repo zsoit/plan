@@ -21,13 +21,13 @@ const lekcja = [
     'Wychowawcza', //17
     'Wolne', //18
     //LEKCJE DLA TU
-    "Podstawy kosztorysowania w budownictwie", //19
-    "Systemy energetyki odnawialnej", //20
-    "Język angielski w budownictwie", //21
-    "Technologia montażu systemów energetyki odnawialnej", //22
-    "Kosztorysowanie w budownictwie", //23
-    "Montaż systemów energetyki", //24
-    "Obsługa systemów energetyki odnawialnej" //25
+    "Podstawy kosztorysowania w budownictwie", //19 1
+    "Systemy energetyki odnawialnej", //20  2
+    "Język angielski w budownictwie", //21 3
+    "Technologia montażu systemów energetyki odnawialnej", //22 4
+    "Kosztorysowanie w budownictwie", //23 5
+    "Montaż systemów energetyki", //24 6
+    "Obsługa systemów energetyki odnawialnej" //25 7
     // "", //26
     // "", //27
     // "" //28
@@ -47,6 +47,8 @@ const link = [
     "https://zsoitmiastko.webex.com/meet/monika.m.mi", //10
     "https://zsoitmiastko.webex.com/join/kzawiesnicka", //11
     // LINKI DLA TU
+    "https://teams.microsoft.com/_#/school/conversations/Og%C3%B3lny?threadId=19:bccbea7f4c094a21a3624f739647963a@thread.tacv2&ctx=channel.", //12
+    "https://zsoitmiastko.webex.com/join/andrzej.mynio ", //13
 
 
 ];
