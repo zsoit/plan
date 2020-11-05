@@ -40,12 +40,12 @@
     width: 300px;
     margin-right: 20px;
     margin-bottom: 10px;
-    background-image: url('img/white-logo-zsoit.png');
+    background-image: url('../img/white-logo-zsoit.png');
 }
 
 main {
     border: 1px solid black;
-    background-image: url('img/white-background-logo-zsoit.png');
+    background-image: url('../img/white-background-logo-zsoit.png');
     padding: 10px;
     width: 300px;
     margin-right: 10px;

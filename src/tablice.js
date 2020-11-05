@@ -19,7 +19,18 @@ const lekcja = [
     'Lekcja wolna', //15
     '--------------', //16
     'Wychowawcza', //17
-    'Wolne' //18
+    'Wolne', //18
+    //LEKCJE DLA TU
+    "Podstawy kosztorysowania w budownictwie", //19
+    "Systemy energetyki odnawialnej", //20
+    "Język angielski w budownictwie", //21
+    "Technologia montażu systemów energetyki odnawialnej", //22
+    "Kosztorysowanie w budownictwie", //23
+    "Montaż systemów energetyki", //24
+    "Obsługa systemów energetyki odnawialnej" //25
+    // "", //26
+    // "", //27
+    // "" //28
 ];
 
 const link = [
@@ -34,7 +45,8 @@ const link = [
     "brak linku ", //8
     "https://zsoitmiastko.webex.com/meet/boguslawszkwarek ", //9
     "https://zsoitmiastko.webex.com/meet/monika.m.mi", //10
-    "https://zsoitmiastko.webex.com/join/kzawiesnicka" //11
+    "https://zsoitmiastko.webex.com/join/kzawiesnicka", //11
+    // LINKI DLA TU
 
 
 ];
@@ -53,5 +65,10 @@ const nauczyciel = [
     "Iwona Muła", //10
     "Jolanta Szczepanowska", //11
     "Monika Miedzielska", //12
-    "Katarzyna Zawieśnicka" //13
+    "Katarzyna Zawieśnicka", //13
+    // NAUCZYCIELE DLA TU
+    "Andzej Mynio", //14
+    "Przemysław Pakuła", //15
+    "Różni" //16
+    // "", //17
 ];
