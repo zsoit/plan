@@ -99,3 +99,22 @@ button:hover {
     cursor: pointer;
     outline: 0;
 }
+
+#srednia {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    /* margin-top: 40px; */
+    /* font-size: 90px; */
+}
+
+#srednia:hover {
+    background-color: red;
+    /* color: black; */
+}
+
+a:visited,
+a {
+    text-decoration: none;
+}

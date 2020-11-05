@@ -6,8 +6,8 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    // hour = 8;
-    // minute = 0;
+    // hour = 9;
+    // minute = 45;
 
     var day = new Date().getDay();
     // day = 5;
@@ -46,6 +46,7 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[10] * 60 + minuty[25]);
                     var roznica = -roznica;
                     Niemiecki();
+                    NiemieckiMonia();
                     godzina3();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[2];
                     break;
@@ -75,6 +76,7 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[55]);
                     var roznica = -roznica;
                     Angielski();
+                    AngielskiKaska();
                     godzina7();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[14];
                     break;
@@ -244,6 +246,7 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     Angielski();
+                    AngielskiKaska();
                     godzina1();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[6];
                     break;
@@ -258,6 +261,7 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[10] * 60 + minuty[25]);
                     var roznica = -roznica;
                     Niemiecki();
+                    NiemieckiMonia();
                     godzina3();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[7];
                     break;
@@ -312,6 +316,7 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[10] * 60 + minuty[25]);
                     var roznica = -roznica;
                     Angielski();
+                    AngielskiKaska();
                     godzina3();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[10];
                     break;

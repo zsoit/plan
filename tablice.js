@@ -33,7 +33,9 @@ const link = [
     "https://zsoitmiastko.webex.com/meet/tkwasniewski ", //7
     "brak linku ", //8
     "https://zsoitmiastko.webex.com/meet/boguslawszkwarek ", //9
-    "https://zsoitmiastko.webex.com/meet/monika.m.mi" //10
+    "https://zsoitmiastko.webex.com/meet/monika.m.mi", //10
+    "https://zsoitmiastko.webex.com/join/kzawiesnicka" //11
+
 
 ];
 
@@ -50,5 +52,6 @@ const nauczyciel = [
     "Bogusław Szkwarek ", //9
     "Iwona Muła", //10
     "Jolanta Szczepanowska", //11
-    "Monika Miedzielska" //12
+    "Monika Miedzielska", //12
+    "Katarzyna Zawieśnicka" //13
 ];

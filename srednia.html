@@ -99,10 +99,10 @@
                     <td>Systemy baz danych</td>
                     <td><input type="number" id="p2" /></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>Administracja sieciowymi systemami operacyjnymi</td>
                     <td><input type="number" id="p3" /></td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td>Projektowanie i montaż lokalnych sieci komputerowych</td>
                     <td><input type="number" id="p4" /></td>
@@ -185,7 +185,7 @@
 
             let p1 = Number(document.getElementById("p1").value);
             let p2 = Number(document.getElementById("p2").value);
-            let p3 = Number(document.getElementById("p3").value);
+            // let p3 = Number(document.getElementById("p3").value);
             let p4 = Number(document.getElementById("p4").value);
             let p5 = Number(document.getElementById("p5").value);
             let p6 = Number(document.getElementById("p6").value);
@@ -213,11 +213,11 @@
                 document.getElementById("p2").style.color = "black";
             }
 
-            if (p3 >= 7) {
-                document.getElementById("p3").style.color = "red";
-            } else {
-                document.getElementById("p3").style.color = "black";
-            }
+            // if (p3 >= 7) {
+            //     document.getElementById("p3").style.color = "red";
+            // } else {
+            //     document.getElementById("p3").style.color = "black";
+            // }
             if (p4 >= 7) {
                 document.getElementById("p4").style.color = "red";
             } else {
@@ -296,9 +296,9 @@
                 n = n + 1;
             }
 
-            if (p3 > 0) {
-                n = n + 1;
-            }
+            // if (p3 > 0) {
+            //     n = n + 1;
+            // }
 
             if (p4 > 0) {
                 n = n + 1;
@@ -352,7 +352,7 @@
             suma =
                 p1 +
                 p2 +
-                p3 +
+                // p3 +
                 p4 +
                 p5 +
                 p6 +
@@ -367,7 +367,7 @@
                 p15 +
                 p16;
             srednia = suma / n;
-            sredniaZawodowa = (p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9) / 9;
+            sredniaZawodowa = (p1 + p2 + p4 + p5 + p6 + p7 + p8 + p9) / 8;
 
             multi = 1000;
 
@@ -392,7 +392,7 @@
                 "Liczba przedmiotów: " + n;
 
             document.getElementById("dzielnik2").innerHTML =
-                "Przedmioty zawodowe: 9";
+                "Przedmioty zawodowe: 8";
 
             document.getElementById("value").innerHTML = "Średnia: " + srednia;
 
@@ -406,6 +406,8 @@
             // document.getElementById("oblicz").style.display = "none";
         };
     </script>
+
+
 </body>
 
 </html>

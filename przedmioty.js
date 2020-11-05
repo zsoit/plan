@@ -33,18 +33,32 @@ const AngielskiZawodowy = () => {
 }
 
 const Angielski = () => {
-    document.getElementById("link").href = link[3];
-    document.getElementById("link").innerHTML = link[3];
+    document.getElementById("link").href = link[11];
+    document.getElementById("link").innerHTML = link[11];
     document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[4];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[3];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[13];
+
+}
+
+const AngielskiKaska = () => {
+    document.getElementById("link1").href = link[3];
+    document.getElementById("link1").innerHTML = link[3];
+    document.getElementById("nauczyciel1").innerHTML = " Nauczyciel: " + nauczyciel[3];
+
+}
+
+const NiemieckiMonia = () => {
+    document.getElementById("link").href = link[10];
+    document.getElementById("link").innerHTML = link[10];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[12];
 
 }
 
 const Niemiecki = () => {
-    document.getElementById("link").href = link[4];
-    document.getElementById("link").innerHTML = link[4];
+    document.getElementById("link1").innerHTML = link[4];
+    document.getElementById("link1").href = link[4];
     document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[5];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[4];
+    document.getElementById("nauczyciel1").innerHTML = " Nauczyciel: " + nauczyciel[4];
 
 }
 
