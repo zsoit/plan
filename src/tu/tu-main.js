@@ -6,11 +6,11 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    // hour = 9;
-    // minute = 45;
+    // hour = 10;
+    // minute = 55;
 
     var day = new Date().getDay();
-    // day = 5;
+    // day = 3;
 
     var godziny = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
@@ -22,10 +22,10 @@ const weekDay = () => {
         case 0: //Niedziela
             {
                 document.getElementById('weekday').innerHTML = "Dziś jest niedziela co oznacza brak lekcji!";
-                alert('Niedziela')
+                document.getElementById('roznica').style.display = "none";
                 break;
             }
-        case 1: //Poniedziałek
+        case 1: //Poniedziałek k
             {
                 // alert('Poniedziałek');
                 document.getElementById('weekday').innerHTML = " Dzień: Poniedziałek";
@@ -34,13 +34,14 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     godzina1();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[8];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[23];
                     break;
                 } else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) { //lekcja2
                     var roznica = (hour * 60 + minute) - (godziny[9] * 60 + minuty[35]);
                     var roznica = -roznica;
-                    Programowanie();
+                    Kosztorysowanie();
                     godzina2();
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[5];
                     break;
                 } else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) { //lekcja3
                     var roznica = (hour * 60 + minute) - (godziny[10] * 60 + minuty[25]);
@@ -48,12 +49,12 @@ const weekDay = () => {
                     Niemiecki();
                     NiemieckiMonia();
                     godzina3();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[2];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[20];
                     break;
                 } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) { //lekcja4
                     var roznica = (hour * 60 + minute) - (godziny[11] * 60 + minuty[25]);
                     var roznica = -roznica;
-                    DzialanoscGospodarcza();
+                    SEO();
                     godzina4();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[6];
                     break;
@@ -62,12 +63,12 @@ const weekDay = () => {
                     var roznica = -roznica;
                     Polski();
                     godzina5();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[11];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[21];
                     break;
                 } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[5]);
                     var roznica = -roznica;
-                    SBD();
+                    AngielskiwBudownictwie();
                     godzina6();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[4];
                     break;
@@ -95,7 +96,7 @@ const weekDay = () => {
 
 
             }
-        case 2: //Wtorek
+        case 2: //Wtorek k
             {
                 // alert('Wtorek')
                 document.getElementById('weekday').innerHTML = " Dzień: Wtorek";
@@ -118,12 +119,12 @@ const weekDay = () => {
                     var roznica = -roznica;
                     Matematyka();
                     godzina3();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[8];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[19];
                     break;
                 } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) { //lekcja4
                     var roznica = (hour * 60 + minute) - (godziny[11] * 60 + minuty[25]);
                     var roznica = -roznica;
-                    Programowanie();
+                    PKwBudownictwie();
                     godzina4();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[13];
                     break;
@@ -132,28 +133,28 @@ const weekDay = () => {
                     var roznica = -roznica;
                     WF();
                     godzina5();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[3];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[22];
                     break;
                 } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[5]);
                     var roznica = -roznica
-                    AngielskiZawodowy();
+                    TechnologiaMontazuSEO();
                     godzina6();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[2];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[23];
                     break;
 
                 } else if (hour == 13 && minute <= 54) { //lekcja7
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[55]);
                     var roznica = -roznica
-                    DzialanoscGospodarcza();
+                    Kosztorysowanie();
                     godzina7();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[10];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[22];
                     break;
 
                 } else if (hour == 13 && minute >= 55 || hour == 14 && minute < 45) { //lekcja8
                     var roznica = (hour * 60 + minute) - (godziny[14] * 60 + minuty[45]);
                     var roznica = -roznica
-                    Sieci();
+                    TechnologiaMontazuSEO();
                     godzina8();
                     document.getElementById('next').innerHTML = 'Następna lekcja: Koniec lekcji!';
                     break;
@@ -165,7 +166,7 @@ const weekDay = () => {
 
 
             }
-        case 3: //Sroda
+        case 3: //Sroda k
             {
                 // alert('Środa')
                 document.getElementById('weekday').innerHTML = " Dzień: Środa";
@@ -199,46 +200,39 @@ const weekDay = () => {
                     var roznica = -roznica;
                     Matematyka();
                     godzina4();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[12];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[24];
                     break;
                 } else if (hour == 11 && minute >= 25 || hour == 12 && minute < 15) { //lekcja5
                     var roznica = (hour * 60 + minute) - (godziny[12] * 60 + minuty[15]);
                     var roznica = -roznica;
-                    Witryny();
+                    MontazSEO();
                     godzina5();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[12];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[24];
                     break;
 
 
                 } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[5]);
                     var roznica = -roznica;
-                    Witryny();
+                    MontazSEO();
                     godzina6();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[0];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[24];
                     break;
 
                 } else if (hour == 13 && minute <= 54) { //lekcja7
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[55]);
                     var roznica = -roznica
-                    ABD();
+                    MontazSEO();
                     godzina7();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[0];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: Koniec lekcji!';
                     break;
 
-                } else if (hour == 13 && minute <= 55 || hour == 14 && minute < 45) { //lekcja8
-                    var roznica = (hour * 60 + minute) - (godziny[14] * 60 + minuty[45]);
-                    var roznica = -roznica;
-                    ABD();
-                    godzina8();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + 'Koniec lekcji!';
-                    break;
                 } else {
                     document.getElementById('weekday').innerHTML = "Koniec lekcji na dziś, wróć jutro!";
                 }
                 break;
             }
-        case 4: //Czwartek
+        case 4: //Czwartek k
             {
                 // alert('Czwartek')
                 document.getElementById('weekday').innerHTML = " Dzień: Czwartek";
@@ -277,12 +271,12 @@ const weekDay = () => {
                     var roznica = -roznica;
                     WF();
                     godzina5();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[9];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[20];
                     break;
                 } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[5]);
                     var roznica = -roznica
-                    PIMLSK();
+                    SEO();
                     godzina6();
                     document.getElementById('next').innerHTML = 'Następna lekcja: Koniec lekcji!';
                     break;
@@ -294,7 +288,7 @@ const weekDay = () => {
                 break;
 
             }
-        case 5: //Piatek
+        case 5: //Piatek k
             {
 
                 document.getElementById('weekday').innerHTML = " Dzień: Piątek";
@@ -318,34 +312,34 @@ const weekDay = () => {
                     Angielski();
                     AngielskiKaska();
                     godzina3();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[10];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[20];
                     break;
                 } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) { //lekcja4
                     var roznica = (hour * 60 + minute) - (godziny[11] * 60 + minuty[25]);
                     var roznica = -roznica;
-                    Sieci();
+                    SEO();
                     godzina4();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[10];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[25];
                     break;
                 } else if (hour == 11 && minute >= 25 || hour == 12 && minute < 15) { //lekcja5
                     var roznica = (hour * 60 + minute) - (godziny[12] * 60 + minuty[15]);
                     var roznica = -roznica;
-                    Sieci();
+                    ObslugaSEO();
                     godzina5();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[10];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[25];
                     break;
                 } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[5]);
                     var roznica = -roznica
-                    Sieci();
+                    ObslugaSEO();
                     godzina6();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[9];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[25];
                     break;
 
                 } else if (hour == 13 && minute <= 54) { //lekcja7
                     var roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[55]);
                     var roznica = -roznica
-                    PIMLSK();
+                    ObslugaSEO();
                     godzina7();
                     document.getElementById('next').innerHTML = 'Następna lekcja: Koniec lekcji!';
                     break;
@@ -362,7 +356,7 @@ const weekDay = () => {
         case 6: //Sobota
             {
                 document.getElementById('weekday').innerHTML = "Dziś jest sobota co oznacza brak lekcji!";
-                alert('Sobota')
+                document.getElementById('roznica').style.display = "none";
                 break;
             }
     }

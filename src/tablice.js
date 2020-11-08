@@ -21,13 +21,13 @@ const lekcja = [
     'Wychowawcza', //17
     'Wolne', //18
     //LEKCJE DLA TU
-    "Podstawy kosztorysowania w budownictwie", //19 1
-    "Systemy energetyki odnawialnej", //20  2
-    "Język angielski w budownictwie", //21 3
-    "Technologia montażu systemów energetyki odnawialnej", //22 4
-    "Kosztorysowanie w budownictwie", //23 5
-    "Montaż systemów energetyki", //24 6
-    "Obsługa systemów energetyki odnawialnej" //25 7
+    "Podstawy kosztorysowania w budownictwie", //19
+    "Systemy energetyki odnawialnej", //20
+    "Język angielski w budownictwie", //21
+    "Technologia montażu systemów energetyki odnawialnej", //22 rozni
+    "Kosztorysowanie w budownictwie", //23 mynio
+    "Montaż systemów energetyki", //24 6 //roznica
+    "Obsługa systemów energetyki odnawialnej" //25 7 //rozni
     // "", //26
     // "", //27
     // "" //28
@@ -71,6 +71,7 @@ const nauczyciel = [
     // NAUCZYCIELE DLA TU
     "Andzej Mynio", //14
     "Przemysław Pakuła", //15
-    "Różni" //16
-    // "", //17
+    "Różni", //16
+    "Przemysław Kwiatek", //17
+    "Roman Dykyj" //18
 ];

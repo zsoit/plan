@@ -22,7 +22,7 @@ const weekDay = () => {
         case 0: //Niedziela
             {
                 document.getElementById('weekday').innerHTML = "Dziś jest niedziela co oznacza brak lekcji!";
-                alert('Niedziela')
+                document.getElementById('roznica').style.display = "none";
                 break;
             }
         case 1: //Poniedziałek
@@ -41,6 +41,7 @@ const weekDay = () => {
                     var roznica = -roznica;
                     Programowanie();
                     godzina2();
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[5];
                     break;
                 } else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) { //lekcja3
                     var roznica = (hour * 60 + minute) - (godziny[10] * 60 + minuty[25]);
@@ -362,7 +363,7 @@ const weekDay = () => {
         case 6: //Sobota
             {
                 document.getElementById('weekday').innerHTML = "Dziś jest sobota co oznacza brak lekcji!";
-                alert('Sobota')
+                document.getElementById('roznica').style.display = "none";
                 break;
             }
     }

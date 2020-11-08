@@ -135,10 +135,54 @@ const HIS = () => {
 
 }
 
-// const WCH = () => {
-//     document.getElementById("link").href = link[10];
-//     document.getElementById("link").innerHTML = link[10];
-//     document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[17];
-//     document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[12];
 
-// }
+//TU
+
+const PKwBudownictwie = () => {
+    document.getElementById("link").href = link[13];
+    document.getElementById("link").innerHTML = link[13];
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[19];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[14];
+}
+
+const SEO = () => {
+    document.getElementById("link").href = link[12];
+    document.getElementById("link").innerHTML = link[12];
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[20];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[15];
+}
+
+const AngielskiwBudownictwie = () => {
+    document.getElementById("link").href = link[3];
+    document.getElementById("link").innerHTML = link[3];
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[21];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[3];
+}
+
+const TechnologiaMontazuSEO = () => {
+    document.getElementById("link").href = '/';
+    document.getElementById("link").innerHTML = 'brak';
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[22];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[16];
+}
+
+const Kosztorysowanie = () => {
+    document.getElementById("link").href = link[13];
+    document.getElementById("link").innerHTML = link[13];
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[23];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[14];
+}
+
+const MontazSEO = () => {
+    document.getElementById("link").href = '/';
+    document.getElementById("link").innerHTML = 'brak';
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[24];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[16];
+}
+
+const ObslugaSEO = () => {
+    document.getElementById("link").href = '/';
+    document.getElementById("link").innerHTML = 'brak';
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[25];
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[16];
+}
