@@ -10,7 +10,7 @@ const weekDay = () => {
     // minute = 55;
 
     var day = new Date().getDay();
-    // day = 3;
+    // day = 5;
 
     var godziny = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
@@ -34,12 +34,12 @@ const weekDay = () => {
                     var roznica = (hour * 60 + minute) - (godziny[8] * 60 + minuty[45]);
                     var roznica = -roznica;
                     godzina1();
-                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[23];
+                    document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[19];
                     break;
                 } else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) { //lekcja2
                     var roznica = (hour * 60 + minute) - (godziny[9] * 60 + minuty[35]);
                     var roznica = -roznica;
-                    Kosztorysowanie();
+                    PKwBudownictwie();
                     godzina2();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[5];
                     break;
