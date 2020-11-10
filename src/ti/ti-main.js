@@ -107,8 +107,8 @@ const weekDay = () => {
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[6];
                     break;
                 } else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) { //lekcja2
-                    roznica = -roznica
                     roznica = (hour * 60 + minute) - (godziny[9] * 60 + minuty[35]);
+                    roznica = -roznica
                     Polski();
                     godzina2();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[7];
