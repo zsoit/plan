@@ -6,8 +6,8 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    // hour = 13;
-    // minute = 58;
+    hour = 12;
+    minute = 55;
 
     var day = new Date().getDay();
     // day = 1;
@@ -279,7 +279,7 @@ const weekDay = () => {
                     godzina5();
                     document.getElementById('next').innerHTML = 'Następna lekcja: ' + lekcja[9];
                     break;
-                } else if (hour == 13 && minute >= 55 || hour == 14 && minute < 45) { //lekcja6
+                } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
                     roznica = (hour * 60 + minute) - (godziny[13] * 60 + minuty[5]);
                     roznica = -roznica
                     PIMLSK();
