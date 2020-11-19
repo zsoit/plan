@@ -6,8 +6,8 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    hour = 12;
-    minute = 55;
+    // hour = 12;
+    // minute = 55;
 
     var day = new Date().getDay();
     // day = 1;
