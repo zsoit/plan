@@ -36,7 +36,7 @@ const lekcja = [
 const link = [
     "https://zsoitmiastko.webex.com/meet/bformela ", //0
     "https://zsoitmiastko.webex.com/meet/eugeniuszlisiecki ", //1
-    "https://zsoitmiastko.webex.com/meet/kkowalczyk ", //2
+    "https://zsoitmiastko.webex.com/meet/katarzyna.kowalczyk ", //2
     "https://meetingsemea30.webex.com/meet/pr1633467325 ", //3
     "https://zsoitmiastko.webex.com/meet/agnieszka.lesinska ", //4
     "https://zsoitmiastko.webex.com/meet/maria.mynio ", //5
@@ -49,6 +49,7 @@ const link = [
     // LINKI DLA TU
     "https://teams.microsoft.com/_#/school/conversations/Og%C3%B3lny?threadId=19:bccbea7f4c094a21a3624f739647963a@thread.tacv2&ctx=channel.", //12
     "https://zsoitmiastko.webex.com/join/andrzej.mynio ", //13
+    "https://zsoitmiastko.webex.com/join/kwiatek901208 " //14
 
 
 ];
