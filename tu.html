@@ -13,17 +13,20 @@
     <link rel="shortcut icon" href="img/logo/basic-logo-zsoit.png">
     <link rel="image_src" href="https://myzsoit.pl/img/logo/new-myzsoit.png" />
     <meta property="og:image" content="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <link rel="icon" href="img/basic-logo-zsoit.png">
-    <link rel="icon" href="img/basic-logo-zsoit.png">
-
-    <title>Plan lekcji 3TU</title>
+    <link rel="icon" href="img/czapka.png">
+    
+    <title>Plan lekcji 3TU - Wesołych Świąt!</title>
 
 </head>
 
 <body>
+    <div class="info">
+        <h3>Plan w budowie!</h3>
+        <p>Z powodu zmianu planu aktualizujemy stronę. Przepraszamy za utrudnienia. :(</p>
+    </div>
 
     <!--info-o-lekcji  -->
-    <div class="info">
+    <div class="info" style="display: none;">
         <h3>Aktualna lekcja: </h3>
         <p id="lekcja"></p>
         <!-- nauczyciel-dod. -->
@@ -39,10 +42,13 @@
         <p id="roznica"></p>
 
         <p id="next"></p>
+        <hr>
+        <p style="border-radius: 80%; background-color: white; border: 1px solid black; padding: 17px;">Wesołych Świąt Bożego Narodzenia!</p>
+        <img src="img/santa.png" width="200"> <hr>
     </div>
 
     <!-- Dzień -->
-    <main>
+    <main style="display: none;">
         <button onclick="PoniedzialekDay()">Pn.</button>
         <button onclick="WtorekDay()">Wt.</button>
         <button onclick="SrodaDay()">Śr.</button>
@@ -204,6 +210,8 @@
     <script src="src/tu/tu-next.js"></script>
     <script src="src/tu/tu-main.js"></script>
     <script src="src/tu/tu-dzien.js"></script>
+    <script src="http://404bajery.pl/pada/custom.php?flake=8"></script>
+    <img src="http://404bajery.pl/pada/8.gif" border="0" style="position:absolute; top: 0px; left: 0px;" />
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 const lekcja = [
     "Administracja bazami danych ", //0
     "Administracja sieciowymi systemami operacyjnymi ", //1
-    "Działalność gospodarcza w branży infomatycznej ", //2
+    "Działalność gospodarcza w branży informatycznej ", //2
     "Język angielski zawodowy w branży informatycznej ", //3
     "Język angielski ", //4
     "Język niemiecki ", //5
@@ -13,7 +13,7 @@ const lekcja = [
     'Projektowanie i montaż lokalnych sieci komputerowych', //9
     'Sieci komputerowe', //10
     'Systemy baz danych', //11
-    'Witryny i aplkacje internetowe', //12
+    'Witryny i aplikacje internetowe', //12
     'Wychowanie fizyczne', //13
     'Historia i Społeczeństwo', //14
     'Lekcja wolna', //15
@@ -59,7 +59,7 @@ const nauczyciel = [
     "Eugeniusz Lisiecki ", //1
     "Katarzyna Kowalczyk ", //2
     "Aleksandra Biernacka ", //3
-    "Agnieszka Lesińśka ", //4
+    "Agnieszka Lesińska ", //4
     "Maria Mynio ", //5
     "Łukasz Kwaśniewski ", //6
     "Tomasz Kwaśniewski ", //7
