@@ -6,11 +6,11 @@ const weekDay = () => {
     let m = new Date();
     let minute = m.getMinutes();
 
-    hour = 13;
-    minute = 2;
+    // hour = 13;
+    // minute = 2;
 
     var day = new Date().getDay();
-    day = 1;
+    // day = 1;
 
     var godziny = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
 
