@@ -81,6 +81,13 @@
         #value {
             color: red;
         }
+        
+        @media print {
+            .no-print,
+            .no-print * {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -177,7 +184,7 @@
         </div>
 
         <br />
-        <button id="print" onclick="window.print();return false">
+        <button class="no-print" id="print" onclick="window.print();return false">
         <i class="fas fa-print"></i> Wyrukuj
       </button>
     </center>
