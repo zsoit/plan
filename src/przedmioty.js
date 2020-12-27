@@ -1,188 +1,103 @@
 //PRZEDMIOTY
 
-const ABD = () => {
-    document.getElementById("link").href = link[0];
-    document.getElementById("link").innerHTML = link[0];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[0];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[0];
-};
-
-
-const ASSO = () => {
-    document.getElementById("link").href = link[0];
-    document.getElementById("link").innerHTML = link[0];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[1];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[0];
-
+function p(linkT, linkA, lekcja, nauczyciel) {
+    document.getElementById("link").href = linkA;
+    document.getElementById("link").innerHTML = linkT;
+    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja;
+    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel;
 }
 
-const DzialanoscGospodarcza = () => {
-    document.getElementById("link").href = link[1];
-    document.getElementById("link").innerHTML = link[1];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[2];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[1];
-
+function p2(linkT, linkA, nauczyciel) {
+    document.getElementById("nauczyciel1").innerHTML = " Nauczyciel: " + nauczyciel;
+    document.getElementById("link1").href = linkA;
+    document.getElementById("link1").innerHTML = linkT;
 }
 
-const AngielskiZawodowy = () => {
-    document.getElementById("link").href = link[2];
-    document.getElementById("link").innerHTML = link[2];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[3];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[2];
+const all = {
+    Angielski() {
+        p(link[3], link[3], lekcja[4], nauczyciel[3]);
+        p2(link[11], link[11], nauczyciel[13]);
 
+    },
+    Niemiecki() {
+        p(link[4], link[4], lekcja[5], nauczyciel[4]);
+        p2(link[10], link[10], nauczyciel[12]);
+    },
+    Polski() {
+        return p(link[5], link[5], lekcja[6], nauczyciel[5]);
+    },
+    Matematyka() {
+        return p(link[6], link[6], lekcja[7], nauczyciel[6]);
+    },
+    WF() {
+        return p(link[8], link[8], lekcja[13], nauczyciel[10]);
+    },
+    HIS() {
+        return p(link[9], link[9], lekcja[14], nauczyciel[9]);
+    },
+
+    Wychowawcza() {
+        return p(link[10], link[10], lekcja[17], nauczyciel[12]);
+    },
+    Wolna() {
+        return document.getElementById("lekcja").innerHTML = 'Lekcja wolna';
+    },
+    EndLesson() {
+        document.getElementById('roznica').style.display = "none";
+        document.getElementById('weekday').innerHTML = "Koniec lekcji na dziś, wróć jutro!";
+    },
 }
 
-const Angielski = () => {
-    document.getElementById("link").href = link[11];
-    document.getElementById("link").innerHTML = link[11];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[4];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[13];
+//TI
+const ti = {
+    Programowanie() {
+        return p(link[7], link[7], lekcja[8], nauczyciel[7]);
+    },
+    ABD() {
+        return p(link[0], link[0], lekcja[0], nauczyciel[0]);
+    },
+    DzialanoscGospodarcza() {
+        return p(link[1], link[1], lekcja[2], nauczyciel[1]);
+    },
+    AngielskiZawodowy() {
+        return p(link[2], link[2], lekcja[3], nauczyciel[2]);
+    },
 
+    PIMLSK() {
+        return p(link[0], link[0], lekcja[9], nauczyciel[0]);
+    },
+    Sieci() {
+        return p(link[0], link[0], lekcja[10], nauczyciel[0]);
+    },
+    SBD() {
+        return p(link[0], link[0], lekcja[11], nauczyciel[0]);
+    },
+    Witryny() {
+        return p(link[1], link[1], lekcja[12], nauczyciel[1]);
+    }
 }
-
-const AngielskiKaska = () => {
-    document.getElementById("link1").href = link[3];
-    document.getElementById("link1").innerHTML = link[3];
-    document.getElementById("nauczyciel1").innerHTML = " Nauczyciel: " + nauczyciel[3];
-
-}
-
-const NiemieckiMonia = () => {
-    document.getElementById("link").href = link[10];
-    document.getElementById("link").innerHTML = link[10];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[12];
-
-}
-
-const Niemiecki = () => {
-    document.getElementById("link1").innerHTML = link[4];
-    document.getElementById("link1").href = link[4];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[5];
-    document.getElementById("nauczyciel1").innerHTML = " Nauczyciel: " + nauczyciel[4];
-
-}
-
-const Polski = () => {
-    document.getElementById("link").href = link[5];
-    document.getElementById("link").innerHTML = link[5];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[6];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[5];
-
-}
-
-const Matematyka = () => {
-    document.getElementById("link").href = link[6];
-    document.getElementById("link").innerHTML = link[6];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[7];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[6];
-
-}
-
-const Programowanie = () => {
-    document.getElementById("link").href = link[7];
-    document.getElementById("link").innerHTML = link[7];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[8];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[7];
-
-}
-
-const PIMLSK = () => {
-    document.getElementById("link").href = link[0];
-    document.getElementById("link").innerHTML = link[0];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[9];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[0];
-
-}
-
-const Sieci = () => {
-    document.getElementById("link").href = link[0];
-    document.getElementById("link").innerHTML = link[0];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[10];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[0];
-
-}
-
-
-const SBD = () => {
-    document.getElementById("link").href = link[0];
-    document.getElementById("link").innerHTML = link[0];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[11];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[0];
-
-}
-
-
-const Witryny = () => {
-    document.getElementById("link").href = link[1];
-    document.getElementById("link").innerHTML = link[1];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[12];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[1];
-
-}
-
-const WF = () => {
-    document.getElementById("link").innerHTML = 'brak linku';
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[13];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[8] + ', ' + nauczyciel[10];
-
-}
-
-const HIS = () => {
-    document.getElementById("link").href = link[9];
-    document.getElementById("link").innerHTML = link[9];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[14];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[9];
-
-}
-
 
 //TU
-
-const PKwBudownictwie = () => {
-    document.getElementById("link").href = link[13];
-    document.getElementById("link").innerHTML = link[13];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[19];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[14];
-}
-
-const SEO = () => {
-    document.getElementById("link").href = link[12];
-    document.getElementById("link").innerHTML = link[12];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[20];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[15];
-}
-
-const AngielskiwBudownictwie = () => {
-    document.getElementById("link").href = link[3];
-    document.getElementById("link").innerHTML = link[3];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[21];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[3];
-}
-
-const TechnologiaMontazuSEO = () => {
-    document.getElementById("link").href = '/';
-    document.getElementById("link").innerHTML = 'brak';
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[22];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[16];
-}
-
-const Kosztorysowanie = () => {
-    document.getElementById("link").href = link[13];
-    document.getElementById("link").innerHTML = link[13];
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[23];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[14];
-}
-
-const MontazSEO = () => {
-    document.getElementById("link").href = '/';
-    document.getElementById("link").innerHTML = 'brak';
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[24];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[16];
-}
-
-const ObslugaSEO = () => {
-    document.getElementById("link").href = '/';
-    document.getElementById("link").innerHTML = 'brak';
-    document.getElementById("lekcja").innerHTML = 'Lekcja to: ' + lekcja[25];
-    document.getElementById("nauczyciel").innerHTML = " Nauczyciel: " + nauczyciel[16];
+const tu = {
+    PKwBudownictwie() {
+        return p(link[13], link[13], lekcja[19], nauczyciel[14]);
+    },
+    SEO() {
+        return p(link[12], link[12], lekcja[20], nauczyciel[15]);
+    },
+    AngielskiwBudownictwie() {
+        return p(link[3], link[3], lekcja[21], nauczyciel[3]);
+    },
+    TechnologiaMontazuSEO() {
+        return p("/", link[8], lekcja[22], nauczyciel[16]);
+    },
+    Kosztorysowanie() {
+        return p(link[13], link[13], lekcja[23], nauczyciel[14]);
+    },
+    MontazSEO() {
+        return p("/", link[8], lekcja[24], nauczyciel[16]);
+    },
+    ObslugaSEO() {
+        return p("/", link[8], lekcja[25], nauczyciel[16]);
+    },
 }

@@ -27,8 +27,8 @@ const lekcja = [
     "Technologia montażu systemów energetyki odnawialnej", //22 rozni
     "Kosztorysowanie w budownictwie", //23 mynio
     "Montaż systemów energetyki", //24 6 //roznica
-    "Obsługa systemów energetyki odnawialnej" //25 7 //rozni
-    // "", //26
+    "Obsługa systemów energetyki odnawialnej", //25 7 //rozni
+    "Religia", //26
     // "", //27
     // "" //28
 ];
@@ -76,3 +76,71 @@ const nauczyciel = [
     "Przemysław Kwiatek", //17
     "Roman Dykyj" //18
 ];
+
+
+const l = {
+    TI: {
+        BF: {
+            ABD: lekcja[0],
+            SBD: lekcja[11],
+            PIMLSK: lekcja[9],
+            Sieci: lekcja[10],
+
+        },
+        EL: {
+            DzialanoscGospodarcza: lekcja[2],
+            Witryny: lekcja[12],
+        },
+        Programowanie: lekcja[8],
+        AngielskiZawodowy: lekcja[3],
+    },
+    ALL: {
+        Angielski: lekcja[4],
+        Niemiecki: lekcja[4],
+        Polski: lekcja[6],
+        Matematyka: lekcja[7],
+        HIS: lekcja[14],
+        WF: lekcja[13],
+        Religia: lekcja[26],
+        Wolna: "Lekcja Wolna",
+        Wolne: "Wolne",
+    }
+
+}
+
+
+function hourN(string) {
+    document.getElementById("godzina").innerHTML = string;
+}
+const godzina1 = () => {
+    hourN("Lekcja 1: 8.00 - 8:45")
+}
+
+const godzina2 = () => {
+    hourN("Lekcja 2: 8.50 - 9:35");
+}
+
+const godzina3 = () => {
+    hourN("Lekcja 3: 9.40 - 10:25");
+
+}
+
+const godzina4 = () => {
+    hourN("Lekcja 4: 10:40 - 11:25");
+}
+
+const godzina5 = () => {
+    hourN("Lekcja 5: 11:30 - 12:15");
+}
+
+const godzina6 = () => {
+    hourN("Lekcja 6: 12:20 - 13:05");
+}
+
+const godzina7 = () => {
+    hourN("Lekcja 7: 13:10 - 13:55");
+}
+
+const godzina8 = () => {
+    hourN("Lekcja 8: 14:00 - 14:45");
+}
