@@ -116,14 +116,6 @@ const basicDay = () => {
             }
     }
 
-
-
 }
 
 basicDay();
-
-if (minute < 10) {
-    minute = "0" + minute;
-}
-document.getElementById('godzina2').innerHTML = "<b>Godzina: </b>" +
-    hour + ":" + minute;
