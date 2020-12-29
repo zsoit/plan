@@ -13,7 +13,7 @@ const weekDay = () => {
 
     // day = 2;
     // hour = 13;
-    // minute = 6;
+    // minute = 41;
 
 
     function lessons(l1, l2, l3, l4, l5, l6, l7, l8) {
@@ -76,32 +76,32 @@ const weekDay = () => {
                 document.getElementById('df').style.display = "none";
                 break;
             }
-        case 1: //Poniedziałek  ok
+        case 1: //Poniedziałek
             {
                 dayHeader('Poniedziałek');
                 lessons(plan.pon.l1, plan.pon.l2, plan.pon.l3, plan.pon.l4, plan.pon.l5, plan.pon.l6, plan.pon.l7, plan.pon.l8);
                 break;
             }
-        case 2: //Wtorek ok
+        case 2: //Wtorek
             {
                 dayHeader('Wtorek');
                 lessons(plan.wt.l1, plan.wt.l2, plan.wt.l3, plan.wt.l4, plan.wt.l5, plan.wt.l6, plan.wt.l7, plan.wt.l8);
                 break;
             }
-        case 3: //Sroda ok
+        case 3: //Sroda
             {
                 dayHeader('Środa');
                 lessons(plan.sr.l1, plan.sr.l2, plan.sr.l3, plan.sr.l4, plan.sr.l5, plan.sr.l6, plan.sr.l7, plan.sr.l8)
                 break;
             }
-        case 4: //Czwartek ok
+        case 4: //Czwartek
             {
                 dayHeader('Czwartek');
                 lessons(plan.czw.l1, plan.czw.l2, plan.czw.l3, plan.czw.l4, plan.czw.l5, plan.czw.l6, plan.czw.l7, plan.czw.l8);
                 break;
 
             }
-        case 5: //Piatek ok
+        case 5: //Piatek
             {
                 dayHeader('Piątek');
                 lessons(plan.pt.l1, plan.pt.l2, plan.pt.l3, plan.pt.l4, plan.pt.l5, plan.pt.l6, plan.pt.l7, plan.pt.l8);
@@ -191,32 +191,32 @@ const weekDay = () => {
             breakVar = minute;
             df = breakVar + ' min. do końca przerwy';
         }
-        if (hour == 8 && minute >= 45 && minute <= 49 == true) { //przerwa1
+        if (hour == 8 && minute >= 45 && minute <= 49 == true) {
             minute = minute - 50;
             breakFun();
-        } else if (hour == 9 && minute >= 35 && minute <= 39 == true) { //przerwa2
+        } else if (hour == 9 && minute >= 35 && minute <= 39 == true) {
             minute = minute - 40;
             breakFun();
-        } else if (hour == 10 && minute >= 25 && minute <= 39 == true) { //przerwa3
+        } else if (hour == 10 && minute >= 25 && minute <= 39 == true) {
             minute = minute - 40;
             breakFun();
-        } else if (hour == 11 && minute >= 25 && minute <= 29 == true) { //przerwa4
+        } else if (hour == 11 && minute >= 25 && minute <= 29 == true) {
             minute = minute - 30;
             breakFun();
-        } else if (hour == 12 && minute >= 15 && minute <= 19) { //przerwa5
+        } else if (hour == 12 && minute >= 15 && minute <= 19) {
             minute = minute - 20;
             minute = -minute;
             breakFun();
-        } else if (hour == 13 && minute >= 5 && minute <= 9) { //przerwa6
+        } else if (hour == 13 && minute >= 5 && minute <= 9) {
             minute = minute - 10;
             breakFun();
-        } else if (hour == 13 && minute >= 55 && minute <= 59) { //przerwa7
+        } else if (hour == 13 && minute >= 55 && minute <= 59) {
             minute = minute - 60;
             breakFun();
-        } else if (hour == 14 && minute >= 45 && minute <= 49) { //przerwa8
+        } else if (hour == 14 && minute >= 45 && minute <= 49) {
             minute = minute - 50;
             breakFun();
-        } else if (hour == 7 && minute >= 0 && minute <= 59) { //przerwa-rano-przed-8
+        } else if (hour == 7 && minute >= 0 && minute <= 59) {
             minute = minute - 60;
             breakFun();
         }

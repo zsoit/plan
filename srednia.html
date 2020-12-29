@@ -2,89 +2,20 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="noindex,nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Średnia ocen dla III TI" />
-    <meta name="author" content="Jakub Achtelik" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="img/logo/basic-logo-zsoit.png" />
-    <link rel="image_src" href="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <meta property="og:image" content="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <link rel="icon" href="img/basic-logo-zsoit.png" />
-    <link rel="icon" href="img/basic-logo-zsoit.png" />
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <meta name="description" content="Średnia ocen dla dla 3TI">
+    <meta name="author" content="Jakub Achtelik">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/style/avg.css">
+    <link rel="shortcut icon" href="img/logo/basic-logo-zsoit.png">
+    <link rel="image_src" href="img/fb.png" />
+    <meta property="og:image" content="img/fb.png" />
+    <link rel="icon" href="img/basic-logo-zsoit.png">
     <title>Średnia III TI</title>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        
-        table {
-            padding: 10px;
-        }
-        
-        td {
-            padding: 10px;
-            background-color: lightgray;
-            border: 10px solid transparent;
-        }
-        
-        th {
-            padding: 10px;
-            background-color: coral;
-            border: 10px solid transparent;
-        }
-        
-        input {
-            width: 50px;
-        }
-        
-        #print {
-            display: none;
-            padding: 5px;
-        }
-        
-        button {
-            background-color: coral;
-            width: 150px;
-            padding: 10px;
-            /* margin-left: 20px; */
-            font-size: 16px;
-        }
-        
-        button:hover {
-            cursor: pointer;
-            color: white;
-            background-color: black;
-        }
-        
-        #oblicz:focus {
-            background-color: black;
-            color: white;
-        }
-        
-        #info {
-            border: 1px solid black;
-            padding: 10px;
-            max-width: 400px;
-            display: none;
-            text-align: left;
-        }
-        
-        #value {
-            color: red;
-        }
-        
-        @media print {
-            .no-print,
-            .no-print * {
-                display: none !important;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -99,76 +30,80 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Administracja bazami danych</td>
-                    <td><input type="number" id="p1" /></td>
+                    <td id="Item1"></td>
+                    <td><input type="number" class="grade" id="p1" /></td>
                 </tr>
                 <tr>
-                    <td>Systemy baz danych</td>
-                    <td><input type="number" id="p2" /></td>
-                </tr>
-                <!-- <tr>
-                    <td>Administracja sieciowymi systemami operacyjnymi</td>
-                    <td><input type="number" id="p3" /></td>
-                </tr> -->
-                <tr>
-                    <td>Projektowanie i montaż lokalnych sieci komputerowych</td>
-                    <td><input type="number" id="p4" /></td>
+                    <td id="Item2"></td>
+                    <td><input type="number" class="grade" id="p2" /></td>
                 </tr>
                 <tr>
-                    <td>Sieci komputerowe</td>
-                    <td><input type="number" id="p5" /></td>
+                    <td id="Item3"></td>
+                    <td><input type="number" class="grade" id="p3" /></td>
                 </tr>
                 <tr>
-                    <td>Działalność gospodrcza w branży informatycznej</td>
-                    <td><input type="number" id="p6" /></td>
+                    <td id="Item4"></td>
+                    <td><input type="number" class="grade" id="p4" /></td>
                 </tr>
                 <tr>
-                    <td>Język angielski zawodowy w branży informatycznej</td>
-                    <td><input type="number" id="p7" /></td>
+                    <td id="Item5"></td>
+                    <td><input type="number" class="grade" id="p5" /></td>
                 </tr>
                 <tr>
-                    <td>Programowanie aplikacji internetowych</td>
-                    <td><input type="number" id="p8" /></td>
+                    <td id="Item6"></td>
+                    <td><input type="number" class="grade" id="p6" /></td>
                 </tr>
                 <tr>
-                    <td>Witryny i aplikacje internetowe</td>
-                    <td><input type="number" id="p9" /></td>
+                    <td id="Item7"></td>
+                    <td><input type="number" class="grade" id="p7" /></td>
                 </tr>
                 <tr>
-                    <td>Matematyka</td>
-                    <td><input type="number" id="p10" /></td>
+                    <td id="Item8"></td>
+                    <td><input type="number" class="grade" id="p8" /></td>
                 </tr>
                 <tr>
-                    <td>Język angielski</td>
-                    <td><input type="number" id="p11" /></td>
+                    <td id="Item9"></td>
+                    <td><input type="number" class="grade" id="p9" /></td>
                 </tr>
                 <tr>
-                    <td>Język niemiecki</td>
-                    <td><input type="number" id="p12" /></td>
+                    <td id="Item10"></td>
+                    <td><input type="number" class="grade" id="p10" /></td>
                 </tr>
                 <tr>
-                    <td>Język polski</td>
-                    <td><input type="number" id="p13" /></td>
+                    <td id="Item11"></td>
+                    <td><input type="number" class="grade" id="p11" /></td>
                 </tr>
                 <tr>
-                    <td>Historia i Społeczeństwo</td>
-                    <td><input type="number" id="p14" /></td>
+                    <td id="Item12"></td>
+                    <td><input type="number" class="grade" id="p12" /></td>
                 </tr>
                 <tr>
-                    <td>Wychowanie Fizyczne</td>
-                    <td><input type="number" id="p15" /></td>
+                    <td id="Item13"></td>
+                    <td><input type="number" class="grade" id="p13" /></td>
+                </tr>
+                <tr>
+                    <td id="Item14"></td>
+                    <td><input type="number" class="grade" id="p14" /></td>
                 </tr>
 
                 <tr>
-                    <td>Religia</td>
-                    <td><input type="number" id="p16" /></td>
+                    <td id="Item15"></td>
+                    <td><input type="number" class="grade" id="p15" /></td>
                 </tr>
             </tbody>
+            <tr class="no-print">
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Imię i nazwisko ucznia</legend>
+                        <input type="text" id="nameOfStudent" placeholder="Wpisz tutaj...">
+                    </fieldset>
+                </td>
+            </tr>
         </table>
 
         <br />
 
-        <button id="oblicz" onclick="oblicz()">Wynik</button>
+        <button id="oblicz" onclick="checkGrade()">Wynik</button>
 
         <div id="info">
             <p id="name"></p>
@@ -184,234 +119,8 @@
         <i class="fas fa-print"></i> Wyrukuj
       </button>
     </center>
-    <script>
-        let imie = prompt("Podaj swoje imię i nazwisko: ");
-        const oblicz = () => {
-            document.getElementById("print").style.display = "block";
-            document.getElementById("info").style.display = "block";
-
-            let p1 = Number(document.getElementById("p1").value);
-            let p2 = Number(document.getElementById("p2").value);
-            // let p3 = Number(document.getElementById("p3").value);
-            let p4 = Number(document.getElementById("p4").value);
-            let p5 = Number(document.getElementById("p5").value);
-            let p6 = Number(document.getElementById("p6").value);
-            let p7 = Number(document.getElementById("p7").value);
-            let p8 = Number(document.getElementById("p8").value);
-            let p9 = Number(document.getElementById("p9").value);
-            let p10 = Number(document.getElementById("p10").value);
-            let p11 = Number(document.getElementById("p11").value);
-            let p12 = Number(document.getElementById("p12").value);
-            let p13 = Number(document.getElementById("p13").value);
-            let p14 = Number(document.getElementById("p14").value);
-            let p15 = Number(document.getElementById("p15").value);
-            let p16 = Number(document.getElementById("p16").value);
-
-            //error-value
-            if (p1 >= 7) {
-                document.getElementById("p1").style.color = "red";
-            } else {
-                document.getElementById("p1").style.color = "black";
-            }
-
-            if (p2 >= 7) {
-                document.getElementById("p2").style.color = "red";
-            } else {
-                document.getElementById("p2").style.color = "black";
-            }
-
-            // if (p3 >= 7) {
-            //     document.getElementById("p3").style.color = "red";
-            // } else {
-            //     document.getElementById("p3").style.color = "black";
-            // }
-            if (p4 >= 7) {
-                document.getElementById("p4").style.color = "red";
-            } else {
-                document.getElementById("p4").style.color = "black";
-            }
-            if (p5 >= 7) {
-                document.getElementById("p5").style.color = "red";
-            } else {
-                document.getElementById("p5").style.color = "black";
-            }
-            if (p6 >= 7) {
-                document.getElementById("p6").style.color = "red";
-            } else {
-                document.getElementById("p6").style.color = "black";
-            }
-            if (p7 >= 7) {
-                document.getElementById("p7").style.color = "red";
-            } else {
-                document.getElementById("p7").style.color = "black";
-            }
-            if (p8 >= 7) {
-                document.getElementById("p8").style.color = "red";
-            } else {
-                document.getElementById("p8").style.color = "black";
-            }
-            if (p9 >= 7) {
-                document.getElementById("p9").style.color = "red";
-            } else {
-                document.getElementById("p9").style.color = "black";
-            }
-            if (p10 >= 7) {
-                document.getElementById("p10").style.color = "red";
-            } else {
-                document.getElementById("p10").style.color = "black";
-            }
-            if (p11 >= 7) {
-                document.getElementById("p11").style.color = "red";
-            } else {
-                document.getElementById("p11").style.color = "black";
-            }
-            if (p12 >= 7) {
-                document.getElementById("p12").style.color = "red";
-            } else {
-                document.getElementById("p12").style.color = "black";
-            }
-            if (p13 >= 7) {
-                document.getElementById("p13").style.color = "red";
-            } else {
-                document.getElementById("p13").style.color = "black";
-            }
-            if (p14 >= 7) {
-                document.getElementById("p14").style.color = "red";
-            } else {
-                document.getElementById("p14").style.color = "black";
-            }
-            if (p15 >= 7) {
-                document.getElementById("p15").style.color = "red";
-            } else {
-                document.getElementById("p15").style.color = "black";
-            }
-            if (p16 >= 7) {
-                document.getElementById("p16").style.color = "red";
-            } else {
-                document.getElementById("p16").style.color = "black";
-            }
-
-            n = 0;
-
-            //dzielnik
-
-            if (p1 > 0) {
-                n = n + 1;
-            }
-
-            if (p2 > 0) {
-                n = n + 1;
-            }
-
-            // if (p3 > 0) {
-            //     n = n + 1;
-            // }
-
-            if (p4 > 0) {
-                n = n + 1;
-            }
-
-            if (p5 > 0) {
-                n = n + 1;
-            }
-
-            if (p6 > 0) {
-                n = n + 1;
-            }
-            if (p7 > 0) {
-                n = n + 1;
-            }
-
-            if (p8 > 0) {
-                n = n + 1;
-            }
-
-            if (p9 > 0) {
-                n = n + 1;
-            }
-            if (p10 > 0) {
-                n = n + 1;
-            }
-            if (p11 > 0) {
-                n = n + 1;
-            }
-            if (p12 > 0) {
-                n = n + 1;
-            }
-            if (p13 > 0) {
-                n = n + 1;
-            }
-            if (p14 > 0) {
-                n = n + 1;
-            }
-
-            if (p15 > 0) {
-                n = n + 1;
-            }
-
-            if (p16 > 0) {
-                n = n + 1;
-            }
-
-            //end-of-dzinnik
-
-            //wzor
-            suma =
-                p1 +
-                p2 +
-                // p3 +
-                p4 +
-                p5 +
-                p6 +
-                p7 +
-                p8 +
-                p9 +
-                p10 +
-                p11 +
-                p12 +
-                p13 +
-                p14 +
-                p15 +
-                p16;
-            srednia = suma / n;
-            sredniaZawodowa = (p1 + p2 + p4 + p5 + p6 + p7 + p8 + p9) / 8;
-
-            multi = 1000;
-
-            srednia = Math.round(srednia * multi) / multi;
-            sredniaZawodowa = Math.round(sredniaZawodowa * multi) / multi;
-            // alert(n);
-
-            // alert(srednia);
-            // alert("dzielnik: " + n);
-
-            if (srednia >= 7 || sredniaZawodowa >= 7) {
-                srednia = "Błędne dane! Średnia nie może byc wyższa niz 6";
-                sredniaZawodowa = " Błędne dane!  Średnia nie może byc wyższa niz 6";
-            }
-
-            if (n == 0) {
-                srednia = "Brak danych";
-                sredniaZawodowa = "Brak danych";
-            }
-
-            document.getElementById("dzielnik").innerHTML =
-                "Liczba przedmiotów: " + n;
-
-            document.getElementById("dzielnik2").innerHTML =
-                "Przedmioty zawodowe: 8";
-
-            document.getElementById("value").innerHTML = "Średnia: " + srednia;
-
-            document.getElementById("value2").innerHTML =
-                "Średnia zawodowa: " + sredniaZawodowa;
-
-            document.getElementById("name").innerHTML = "Uczeń: " + imie;
-            document.getElementById("class").innerHTML = "Klasa: III TI 2019/2020";
-
-            // document.getElementById("print").style.display = "block";
-            // document.getElementById("oblicz").style.display = "none";
-        };
+    <script src="src/bin/arrays.js"></script>
+    <script src="src/plugins/avg.js">
     </script>
 
 

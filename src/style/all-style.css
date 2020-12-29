@@ -29,7 +29,7 @@
     color: white;
 }
 
-#dzien {
+#dayName {
     font-size: 40px;
 }
 
@@ -40,12 +40,12 @@
     width: 300px;
     margin-right: 20px;
     margin-bottom: 10px;
-    background-image: url('../img/white-logo-zsoit.png');
+    background-image: url('../../img/white-logo-zsoit.png');
 }
 
 main {
     border: 1px solid black;
-    background-image: url('../img/white-background-logo-zsoit.png');
+    background-image: url('../../img/white-background-logo-zsoit.png');
     padding: 10px;
     width: 300px;
     margin-right: 10px;
@@ -72,7 +72,7 @@ p {
     font-weight: 500;
 }
 
-#roznica {
+#df {
     color: red;
 }
 
@@ -100,16 +100,17 @@ button:hover {
     outline: 0;
 }
 
-#srednia {
+#avg {
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 15px;
+    margin-bottom: 10px;
     /* margin-top: 40px; */
     /* font-size: 90px; */
 }
 
-#srednia:hover {
+#avg:hover {
     background-color: red;
     /* color: black; */
 }
@@ -117,4 +118,14 @@ button:hover {
 a:visited,
 a {
     text-decoration: none;
+}
+
+.pItem__foote {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    padding: 10px;
 }

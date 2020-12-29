@@ -1,27 +1,27 @@
 day = new Date().getDay();
 // day = 6;
 
-const PoniedzialekDay = () => {
+const MonDay = () => {
     day = 1;
     basicDay();
 }
 
-const WtorekDay = () => {
+const TuesDay = () => {
     day = 2;
     basicDay();
 }
 
-const SrodaDay = () => {
+const WednesDay = () => {
     day = 3;
     basicDay();
 }
 
-const CzwartekDay = () => {
+const ThursDay = () => {
     day = 4;
     basicDay();
 }
 
-const PiatekDay = () => {
+const FriDay = () => {
     day = 5;
     basicDay();
 }
@@ -41,7 +41,7 @@ hourH('8h', '14:00 - 14:45');
 
 
 function Wname(name) {
-    document.getElementById('dzien').innerHTML = name;
+    document.getElementById('dayName').innerHTML = name;
 
 }
 

@@ -4,52 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex,nofollow">
-    <link rel="stylesheet" href="src/all-style.css" />
+    <link rel="stylesheet" href="src/style/all-style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="60">
     <meta name="description" content="Plan lekcji dla 3TI">
     <meta name="author" content="Jakub Achtelik">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/logo/basic-logo-zsoit.png">
-    <link rel="image_src" href="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <meta property="og:image" content="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <link rel="icon" href="img/czapka.png">
+    <link rel="image_src" href="img/fb.png" />
+    <meta property="og:image" content="img/fb.png" />
+    <link rel="icon" href="img/basic-logo-zsoit.png">
 
-    <title>Plan lekcji 3TI - Wesołych Świąt!</title>
+    <title></title>
 
 </head>
 
 <body>
 
-    <!--info-o-lekcji  -->
+    <!--Info -->
     <div class="info">
-        <h3>Aktualna lekcja: </h3>
-        <p id="lekcja"></p>
-        <!-- nauczyciel-dod. -->
-        <p id="nauczyciel1"></p>
-        <a id="link1" target="_blank" href=""></a>
-        <!-- nauczyciel-pod. -->
-        <p id="nauczyciel"></p>
+        <h3 id="header_now_lesson"></h3>
+        <p id="lection"></p>
+        <!-- info_about_teacher_primary -->
+        <p id="teacher"></p>
         <a id="link" target="_blank" href=""></a>
-        <!-- info-o-lekcji -->
+        <!-- info_about_teacher_extended -->
+        <p id="teacher1"></p>
+        <a id="link1" target="_blank" href=""></a>
+        <!-- info_about_lesson -->
         <p id="weekday"> </p>
         <p id="hourLesson"></p>
         <p id="hour"></p>
         <p id="df"></p>
-
         <p id="next"></p>
-        <img src="img/santa.png" width="200">
+        <center><img src="img/basic-logo-zsoit.png" width="150"></center>
     </div>
 
-    <!-- Dzień -->
+    <!-- Day -->
     <main>
-        <button onclick="PoniedzialekDay()">Pn.</button>
-        <button onclick="WtorekDay()">Wt.</button>
-        <button onclick="SrodaDay()">Śr.</button>
-        <button onclick="CzwartekDay()">Cz.</button>
-        <button onclick="PiatekDay()">Pt.</button>
+        <button onclick="MonDay()">Pn.</button>
+        <button onclick="TuesDay()">Wt.</button>
+        <button onclick="WednesDay()">Śr.</button>
+        <button onclick="ThursDay()">Cz.</button>
+        <button onclick="FriDay()">Pt.</button>
 
-        <p id="dzien">
+        <p id="dayName">
 
         </p>
 
@@ -107,11 +106,11 @@
         </div>
     </main>
 
-    <!-- Linki -->
+    <!--  URLs -->
     <div class="info">
         <div class="cisco">
 
-            <h3>ZAWODOWE</h3>
+            <h3 id="header_url1"></h3>
             <div class="zawodowe">
 
                 <div class="cisco__person"> <b class="tk_name"></b> <br>
@@ -129,7 +128,7 @@
                 </div>
             </div>
             <br>
-            <h3>INNE</h3>
+            <h3 id="header_url2"></h3>
             <div class="inne">
                 <div class="cisco__person"> <b class="lk_name"></b> <br>
                     <a class="cisco__link lk_url" href="" target="_blank"></a>
@@ -164,9 +163,9 @@
 
     </div>
 
-    <!-- Przedmioty -->
+    <!-- Items -->
     <div class="info">
-        <h3>PRZEDMIOTY</h3>
+        <h3 id="header_items"></h3>
         <ol>
             <li id="pItem1"></li>
             <li id="pItem2"></li>
@@ -187,17 +186,20 @@
         </ol>
         <p id="pItem__footer"></p> <br>
 
-        <a href="https://plan.3ti.pl/srednia" target="_blank" id="srednia">
-            Oblicz swoją średnią
-        </a>
+        <a href="https://plan.3ti.pl/srednia" target="_blank" id="avg"></a>
+        <p class="copyright"></p>
     </div>
-    <script src="src/przedmioty.js"></script>
-    <script src="src/tablice.js"></script>
-    <script src="src/plan.js"></script>
-    <script src="src/ti/ti-main.js"></script>
-    <script src="src/ti/ti-week.js"></script>
-    <script src="src/showInHTML.js"></script>
-    <script src="src/snow.js"></script>
+    <script src="src/bin/items.js"></script>
+    <script src="src/bin/arrays.js"></script>
+    <script src="src/bin/plane.js"></script>
+
+    <script src="src/etc/config.js"></script>
+    <script src="src/etc/main.js"></script>
+    <script src="src/etc/week.js"></script>
+    <script src="src/etc/showInHTML.js"></script>
+
+    <script src="src/plugins/snow.js"></script>
+    <script src="src/plugins/ie.js"></script>
 </body>
 
 </html>

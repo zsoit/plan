@@ -1,6 +1,6 @@
 //TABLICE
 
-const lekcja = [
+const lection = [
     "Administracja bazami danych ", //0
     "Administracja sieciowymi systemami operacyjnymi ", //1
     "Działalność gospodarcza w branży informatycznej ", //2
@@ -24,13 +24,11 @@ const lekcja = [
     "Podstawy kosztorysowania w budownictwie", //19
     "Systemy energetyki odnawialnej", //20
     "Język angielski w budownictwie", //21
-    "Technologia montażu systemów energetyki odnawialnej", //22 rozni
+    "Technologia montażu systemów energetyki odnawialnej", //22
     "Kosztorysowanie w budownictwie", //23 mynio
-    "Montaż systemów energetyki", //24 6 //roznica
+    "Montaż systemów energetyki", //24
     "Obsługa systemów energetyki odnawialnej", //25 7 //rozni
     "Religia", //26
-    // "", //27
-    // "" //28
 ];
 
 const link = [
@@ -54,7 +52,7 @@ const link = [
 
 ];
 
-const nauczyciel = [
+const teacher = [
     "Bartosz Formela ", //0
     "Eugeniusz Lisiecki ", //1
     "Katarzyna Kowalczyk ", //2
@@ -81,29 +79,30 @@ const nauczyciel = [
 const l = {
     TI: {
         BF: {
-            ABD: lekcja[0],
-            SBD: lekcja[11],
-            PIMLSK: lekcja[9],
-            Sieci: lekcja[10],
+            ABD: lection[0],
+            SBD: lection[11],
+            PIMLSK: lection[9],
+            Sieci: lection[10],
 
         },
         EL: {
-            DzialanoscGospodarcza: lekcja[2],
-            Witryny: lekcja[12],
+            DzialanoscGospodarcza: lection[2],
+            Witryny: lection[12],
         },
-        Programowanie: lekcja[8],
-        AngielskiZawodowy: lekcja[3],
+        Programowanie: lection[8],
+        AngielskiZawodowy: lection[3],
     },
     ALL: {
-        Angielski: lekcja[4],
-        Niemiecki: lekcja[4],
-        Polski: lekcja[6],
-        Matematyka: lekcja[7],
-        HIS: lekcja[14],
-        WF: lekcja[13],
-        Religia: lekcja[26],
+        Angielski: lection[4],
+        Niemiecki: lection[4],
+        Polski: lection[6],
+        Matematyka: lection[7],
+        HIS: lection[14],
+        WF: lection[13],
+        Religia: lection[26],
         Wolna: "Lekcja Wolna",
-        Wolne: "Wolne",
+        Wolne: lection[18],
+        EndLesson: "Koniec lekcji",
     }
 
 }
