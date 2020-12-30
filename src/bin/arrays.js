@@ -72,7 +72,8 @@ const teacher = [
     "Przemysław Pakuła", //15
     "Różni", //16
     "Przemysław Kwiatek", //17
-    "Roman Dykyj" //18
+    "Roman Dykyj", //18
+    "brak", //19
 ];
 
 
@@ -100,8 +101,7 @@ const l = {
         HIS: lection[14],
         WF: lection[13],
         Religia: lection[26],
-        Wolna: "Lekcja Wolna",
-        Wolne: lection[18],
+        Wolne: lection[15],
         EndLesson: "Koniec lekcji",
     }
 

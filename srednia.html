@@ -14,13 +14,13 @@
     <link rel="image_src" href="img/fb.png" />
     <meta property="og:image" content="img/fb.png" />
     <link rel="icon" href="img/basic-logo-zsoit.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Średnia III TI</title>
-
 </head>
 
 <body>
     <center>
-        <h1>Średnia ocen dla III TI</h1>
+        <h1>Średnia ocen dla III TI </h1>
         <table border="0">
             <thead>
                 <tr>
@@ -31,64 +31,64 @@
             <tbody>
                 <tr>
                     <td id="Item1"></td>
-                    <td><input type="number" class="grade" id="p1" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p1" /></td>
                 </tr>
                 <tr>
                     <td id="Item2"></td>
-                    <td><input type="number" class="grade" id="p2" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p2" /></td>
                 </tr>
                 <tr>
                     <td id="Item3"></td>
-                    <td><input type="number" class="grade" id="p3" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p3" /></td>
                 </tr>
                 <tr>
                     <td id="Item4"></td>
-                    <td><input type="number" class="grade" id="p4" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p4" /></td>
                 </tr>
                 <tr>
                     <td id="Item5"></td>
-                    <td><input type="number" class="grade" id="p5" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p5" /></td>
                 </tr>
                 <tr>
                     <td id="Item6"></td>
-                    <td><input type="number" class="grade" id="p6" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p6" /></td>
                 </tr>
                 <tr>
                     <td id="Item7"></td>
-                    <td><input type="number" class="grade" id="p7" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p7" /></td>
                 </tr>
                 <tr>
                     <td id="Item8"></td>
-                    <td><input type="number" class="grade" id="p8" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p8" /></td>
                 </tr>
                 <tr>
                     <td id="Item9"></td>
-                    <td><input type="number" class="grade" id="p9" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p9" /></td>
                 </tr>
                 <tr>
                     <td id="Item10"></td>
-                    <td><input type="number" class="grade" id="p10" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p10" /></td>
                 </tr>
                 <tr>
                     <td id="Item11"></td>
-                    <td><input type="number" class="grade" id="p11" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p11" /></td>
                 </tr>
                 <tr>
                     <td id="Item12"></td>
-                    <td><input type="number" class="grade" id="p12" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p12" /></td>
                 </tr>
                 <tr>
                     <td id="Item13"></td>
-                    <td><input type="number" class="grade" id="p13" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p13" /></td>
                 </tr>
                 <tr>
                     <td id="Item14"></td>
-                    <td><input type="number" class="grade" id="p14" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p14" /></td>
                 </tr>
 
                 <tr>
                     <td id="Item15"></td>
-                    <td><input type="number" class="grade" id="p15" /></td>
+                    <td><input type="number" class="grade" min="1" max="6" id="p15" /></td>
                 </tr>
             </tbody>
             <tr class="no-print">
@@ -103,25 +103,24 @@
 
         <br />
 
-        <button id="oblicz" onclick="checkGrade()">Wynik</button>
+        <button id="btn__main" onclick="main()">Wynik</button>
 
         <div id="info">
             <p id="name"></p>
             <p id="class"></p>
-            <p id="value"></p>
-            <p id="value2"></p>
-            <p id="dzielnik"></p>
-            <p id="dzielnik2"></p>
+            <p id="result"></p>
+            <p id="resultPro"></p>
+            <p id="items"></p>
+            <p id="itemsPro"></p>
         </div>
 
         <br />
         <button class="no-print" id="print" onclick="window.print();return false">
-        <i class="fas fa-print"></i> Wyrukuj
-      </button>
+        <i class="fas fa-print"></i> Wyrukuj</button>
     </center>
+    <input type="text" id="checkClass" value="TI" style="display: none">
     <script src="src/bin/arrays.js"></script>
-    <script src="src/plugins/avg.js">
-    </script>
+    <script src="src/plugins/avg.js"></script>
 
 
 </body>

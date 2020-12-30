@@ -39,8 +39,8 @@ const all = {
     Wychowawcza() {
         return p(link[10], link[10], lection[17], teacher[12]);
     },
-    Wolna() {
-        return document.getElementById("lection").innerHTML = 'Lekcja wolna';
+    Wolne() {
+        return p('', '', lection[15], teacher[19]);
     },
     EndLesson() {
         document.getElementById('df').style.display = "none";

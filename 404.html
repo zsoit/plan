@@ -4,165 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="noindex,nofollow">
-    <link rel="stylesheet" href="https://myzsoit.pl/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="15">
     <meta name="description" content="404! Nie znaleziono strony...">
     <meta name="author" content="Jakub Achtelik">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/logo/basic-logo-zsoit.png">
-    <link rel="image_src" href="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <meta property="og:image" content="https://myzsoit.pl/img/logo/new-myzsoit.png" />
-    <link rel="icon" href="img/basic-logo-zsoit.png">
+    <link rel="shortcut icon" href="https://plan.3ti.pl/img/404.png">
+    <link rel="image_src" href="https://plan.3ti.pl/img/fb.png" />
+    <meta property="og:image" content="img/fb.png" />
+    <link rel="icon" href="https://plan.3ti.pl/img/404.png">
     <meta http-equiv="refresh" content="3; /">
-    <title>Hasło jest niepoprawne!</title>
+    <title>404</title>
 
     <style>
         body {
-            background-image: url('https://myzsoit.pl/img/logo/white-background-logo-zsoit.png');
-        }
-        
-        img.avatr {
-            position: absolute;
-            left: 70%
-        }
-        
-        .footer {
-            background-color: none;
-        }
-        
-        pkg {
-            font-size: 20px;
-            font-family: arial;
-            padding: 2px;
-        }
-        
-        #q1 {
-            font-family: arial;
-            font-size: 60px;
-            padding: 20px;
-        }
-        
-        #main {
-            font-size: 70px;
-            font-family: fantasy;
-            text-align: center
-        }
-        
-        #ipv4 {
-            background-color: red;
-            float: left;
-            width: 25%;
-            height: 500px;
-        }
-        
-        #potega2 {
-            background-color: orange;
-            float: left;
-            width: 25%;
-            height: 500px;
-        }
-        
-        #klasy-adresow {
-            background-color: blue;
-            float: left;
-            width: 25%;
-            height: 500px;
-        }
-        
-        #brodecast {
-            background-color: chartreuse;
-            float: left;
-            width: 25%;
-            height: 500px;
-        }
-        
-        button.budowa {
-            font-family: monospace;
-            background-color: rgb(255, 192, 0);
-            padding: 15px 20p;
-            font-size: 20px;
-            border: 1px solid black;
-        }
-        
-        button.budowa:hover {
-            background-color: red;
-            color: white;
+            background-color: black;
         }
         
         .alert {
             font-family: monospace;
             font-size: 30px;
             padding: 20px;
-            background-color: #b58400;
+            background-color: black;
             color: white;
             opacity: 1;
             transition: opacity 0.6s;
             margin-bottom: 15px;
         }
         
-        .alert.success {
-            background-color: #4CAF50;
-        }
-        
-        .alert.info {
-            background-color: #2196F3;
-        }
-        
-        .alert.warning {
-            background-color: green;
-        }
-        
-        .closebtn {
-            margin-left: 15px;
-            color: white;
-            font-weight: bold;
-            float: right;
-            font-size: 22px;
-            line-height: 20px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        
-        .closebtn:hover {
-            color: black;
+        footer {
+            font-size: 20px;
         }
     </style>
 
 </head>
 
 <body>
-    <div class="status"></div>
-    <script src="js/scroll.js"></script>
 
-
-    <div class="alert">
-        <span class="closebtn">&times;</span>
-        <center><span style="font-size: 50px; background-color: red; padding: 10px; font-family: arial;">ERROR 404 </span> <br>
-            <p>nie znaleziono strony...</p><br> <img src="https://myzsoit.pl/img/nav/error.png" width="150px">
-        </center>
-
-        <br><br>
-        <center>
-            <footeer> &copy 2020 3ti.pl<br> <span style="font-size: 25px;">Jakub Achtelik</span> <br><span style="font-size: 20px;">All Rights Reserved</span> </footer>
-        </center>
+    <center>
+        <div class="alert">
+            <span style="font-size: 50px; background-color: red; padding: 10px; font-family: arial;">ERROR 404 </span> <br>
+            <p>nie znaleziono strony...</p><br> <img src="https://plan.3ti.pl/img/404.png" width="150px"> <br><br>
+            <footer> &copy 2021 Jakub Achtelik<br>www.plan.3ti.pl<br>All Rights Reserved </footer>
+    </center>
 
     </div>
-
-    <script>
-        var close = document.getElementsByClassName("closebtn");
-        var i;
-
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function() {
-                var div = this.parentElement;
-                div.style.opacity = "0";
-                setTimeout(function() {
-                    div.style.display = "none";
-                }, 600);
-            }
-        }
-    </script>
 
 </body>
 

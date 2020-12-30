@@ -1,4 +1,4 @@
-//INFO-DNI-TYGODNIA
+//MAIN.JS
 const weekDay = () => {
 
     let hour = new Date().getHours();
@@ -12,49 +12,48 @@ const weekDay = () => {
     let df; //zmienna, ktora przechowuje roznice, w minutach (od ang. DiFfrence)
 
     // day = 2;
-    // hour = 13;
+    // hour = 8;
     // minute = 41;
 
-
     function lessons(l1, l2, l3, l4, l5, l6, l7, l8) {
-        if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) { //lekcja1
+        if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) {
             df = (hour * 60 + minute) - (hours[8] * 60 + minutes[45]);
             df = -df;
             hourLesson1();
             return l1();
-        } else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) { //lekcja2
+        } else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) {
             df = (hour * 60 + minute) - (hours[9] * 60 + minutes[35]);
             df = -df;
             hourLesson2();
             return l2();
-        } else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) { //lekcja3
+        } else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) {
             df = (hour * 60 + minute) - (hours[10] * 60 + minutes[25]);
             df = -df;
             hourLesson3();
             return l3();
-        } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) { //lekcja4
+        } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) {
             df = (hour * 60 + minute) - (hours[11] * 60 + minutes[25]);
             df = -df;
             hourLesson4();
             return l4();
-        } else if (hour == 11 && minute >= 25 || hour == 12 && minute < 15) { //lekcja5
+        } else if (hour == 11 && minute >= 25 || hour == 12 && minute < 15) {
             df = (hour * 60 + minute) - (hours[12] * 60 + minutes[15]);
             df = -df;
             hourLesson5();
             return l5();
-        } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) { //lekcja6
+        } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) {
             df = (hour * 60 + minute) - (hours[13] * 60 + minutes[5]);
             df = -df;
             hourLesson6();
             return l6();
 
-        } else if (hour == 13 && minute <= 54) { //lekcja7
+        } else if (hour == 13 && minute <= 54) {
             df = (hour * 60 + minute) - (hours[13] * 60 + minutes[55]);
             df = -df;
             hourLesson7();
             return l7();
 
-        } else if (hour == 13 && minute >= 55 || hour == 14 && minute < 45) { //lekcja8
+        } else if (hour == 13 && minute >= 55 || hour == 14 && minute < 45) {
             df = (hour * 60 + minute) - (hours[14] * 60 + minutes[45]);
             df = -df;
             hourLesson8();
@@ -70,44 +69,44 @@ const weekDay = () => {
     }
 
     switch (day) {
-        case 0: //Niedziela
+        case 0:
             {
                 dayHeader("Dziś jest niedziela co oznacza brak lekcji!");
                 document.getElementById('df').style.display = "none";
                 break;
             }
-        case 1: //Poniedziałek
+        case 1:
             {
                 dayHeader('Poniedziałek');
                 lessons(plan.pon.l1, plan.pon.l2, plan.pon.l3, plan.pon.l4, plan.pon.l5, plan.pon.l6, plan.pon.l7, plan.pon.l8);
                 break;
             }
-        case 2: //Wtorek
+        case 2:
             {
                 dayHeader('Wtorek');
                 lessons(plan.wt.l1, plan.wt.l2, plan.wt.l3, plan.wt.l4, plan.wt.l5, plan.wt.l6, plan.wt.l7, plan.wt.l8);
                 break;
             }
-        case 3: //Sroda
+        case 3:
             {
                 dayHeader('Środa');
                 lessons(plan.sr.l1, plan.sr.l2, plan.sr.l3, plan.sr.l4, plan.sr.l5, plan.sr.l6, plan.sr.l7, plan.sr.l8)
                 break;
             }
-        case 4: //Czwartek
+        case 4:
             {
                 dayHeader('Czwartek');
                 lessons(plan.czw.l1, plan.czw.l2, plan.czw.l3, plan.czw.l4, plan.czw.l5, plan.czw.l6, plan.czw.l7, plan.czw.l8);
                 break;
 
             }
-        case 5: //Piatek
+        case 5:
             {
                 dayHeader('Piątek');
                 lessons(plan.pt.l1, plan.pt.l2, plan.pt.l3, plan.pt.l4, plan.pt.l5, plan.pt.l6, plan.pt.l7, plan.pt.l8);
                 break;
             }
-        case 6: //Sobota
+        case 6:
             {
                 dayHeader("Dziś jest sobota co oznacza brak lekcji!");
                 document.getElementById('df').style.display = "none";
@@ -127,13 +126,10 @@ const weekDay = () => {
         } else if (df >= 180 && df > 180) {
             df = df - 180;
             df = "3 godz. " + df;
-            // } else if (róznica < 0 && df < 60) {
-            //     df = 'Jeszcze lekcja się nie zaczeła!';
         } else if (df == undefined) {
             df = 'Brak lekcji! 0'
 
         } else {
-            // df = 'Jeszcze lekcja się nie zaczeła!';
             df = df;
         }
     }
@@ -227,5 +223,4 @@ const weekDay = () => {
         "Zostało: " + df;
 
 }
-
 weekDay();
