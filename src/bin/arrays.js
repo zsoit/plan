@@ -63,7 +63,7 @@ const teacher = [
     "Tomasz Kwaśniewski ", //7
     "Marek Zabłocki ", //8
     "Bogusław Szkwarek ", //9
-    "Iwona Muła", //10
+    "Marek Zabłocki, Jolanta Szczepanowska Iwona Muła", //10
     "Jolanta Szczepanowska", //11
     "Monika Miedzielska", //12
     "Katarzyna Zawieśnicka", //13
@@ -74,6 +74,7 @@ const teacher = [
     "Przemysław Kwiatek", //17
     "Roman Dykyj", //18
     "brak", //19
+    "Iwona Muła", //20
 ];
 
 
