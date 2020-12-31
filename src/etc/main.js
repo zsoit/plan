@@ -11,8 +11,8 @@ const weekDay = () => {
 
     let df; //zmienna, ktora przechowuje roznice, w minutach (od ang. DiFfrence)
 
-    // day = 2;
-    // hour = 8;
+    // day = 3;
+    // hour = 9;
     // minute = 41;
 
     function lessons(l1, l2, l3, l4, l5, l6, l7, l8) {

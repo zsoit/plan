@@ -103,6 +103,7 @@ const l = {
         Religia: lection[26],
         Wolne: lection[15],
         EndLesson: "Koniec lekcji",
+        Wychowawcza: lection[17],
     }
 
 }

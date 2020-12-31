@@ -54,14 +54,14 @@ const pItems = () => {
         pItem('#pItem6', lection[3], '(1h)');
         pItem('#pItem7', lection[8], '(2h)');
         pItem('#pItem8', lection[12], '(2h)');
-        pItem('#pItem9', lection[7], '(2h)');
-        pItem('#pItem10', lection[4], '(4h)');
-        pItem('#pItem11', lection[5], '(3h)');
-        pItem('#pItem12', lection[6], '(2h)');
-        pItem('#pItem13', lection[14], '(4h)');
-        pItem('#pItem14', lection[13], '(1h)');
+        pItem('#pItem9', lection[7], '(4h)');
+        pItem('#pItem10', lection[4], '(3h)');
+        pItem('#pItem11', lection[5], '(2h)');
+        pItem('#pItem12', lection[6], '(4h)');
+        pItem('#pItem13', lection[14], '(1h)');
+        pItem('#pItem14', lection[13], '(3h)');
         pItem('#pItem15', lection[17], '(1h)');
-        pItem('#pItem16', lection[26], '(1h)');
+        pItem('#pItem16', lection[26], '(2h)');
         document.querySelector("#pItem__footer").innerHTML = "Ilość godzin lekcyjnych w tygodniu: 36h <br> Ilość godzin zawodowych w tygodniu: 16h <br>";
     }
     //HTML-ELEMENTS-STATIC

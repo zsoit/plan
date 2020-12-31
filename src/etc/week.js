@@ -67,13 +67,13 @@ const basicDay = () => {
 
 
     switch (day) {
-        case 0: //Niedziela
+        case 0:
             {
                 Wname('Niedziela');
                 Wlessons(wolne, wolne, wolne, wolne, wolne, wolne, wolne, wolne);
                 break;
             }
-        case 1: //Poniedziałek
+        case 1:
             {
 
                 Wname('Poniedziałek');
@@ -82,33 +82,33 @@ const basicDay = () => {
 
 
             }
-        case 2: //Wtorek
+        case 2:
             {
                 Wname('Wtorek');
                 Wlessons(wt1, wt2, wt3, wt4, wt5, wt6, wt7, wt8);
                 break;
             }
-        case 3: //Sroda
+        case 3:
             {
                 Wname('Środa');
                 Wlessons(sr1, sr2, sr3, sr4, sr5, sr6, sr7, sr8);
                 break;
             }
 
-        case 4: //Czwartek
+        case 4:
             {
                 Wname('Czwartek');
                 Wlessons(czw1, czw2, czw3, czw4, czw5, czw6, czw7, czw8);
                 break;
             }
-        case 5: //Piatek
+        case 5:
             {
 
                 Wname('Piątek');
                 Wlessons(pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8);
                 break;
             }
-        case 6: //Sobota
+        case 6:
             {
                 Wname('Sobota');
                 Wlessons(wolne, wolne, wolne, wolne, wolne, wolne, wolne, wolne);
