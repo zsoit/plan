@@ -1,30 +1,19 @@
 day = new Date().getDay();
 // day = 6;
+let mon, tue, wed, thu, fri;
 
-const MonDay = () => {
-    day = 1;
-    basicDay();
+function changeWeekDay(item, id, valueOfDay) {
+    item = document.querySelector(id);
+    item.addEventListener('click', function() {
+        day = valueOfDay;
+        basicDay();
+    });
 }
-
-const TuesDay = () => {
-    day = 2;
-    basicDay();
-}
-
-const WednesDay = () => {
-    day = 3;
-    basicDay();
-}
-
-const ThursDay = () => {
-    day = 4;
-    basicDay();
-}
-
-const FriDay = () => {
-    day = 5;
-    basicDay();
-}
+changeWeekDay(mon, "#mon", 1);
+changeWeekDay(tue, "#tue", 2);
+changeWeekDay(wed, "#wed", 3);
+changeWeekDay(thu, "#thu", 4);
+changeWeekDay(fri, "#fri", 5);
 
 function hourH(h, time) {
     document.getElementById(h).innerHTML = time;
@@ -51,15 +40,14 @@ function WLesson(id, nr, lekcja) {
 }
 
 function Wlessons(l1, l2, l3, l4, l5, l6, l7, l8) {
-    WLesson('lekcja1', '1.', l1);
-    WLesson('lekcja2', '2.', l2);
-    WLesson('lekcja3', '3.', l3);
-    WLesson('lekcja4', '4.', l4);
-    WLesson('lekcja5', '5.', l5);
-    WLesson('lekcja6', '6.', l6);
-    WLesson('lekcja7', '7.', l7);
-    WLesson('lekcja8', '8.', l8);
-
+    WLesson('item__lesson1', '1.', l1);
+    WLesson('item__lesson2', '2.', l2);
+    WLesson('item__lesson3', '3.', l3);
+    WLesson('item__lesson4', '4.', l4);
+    WLesson('item__lesson5', '5.', l5);
+    WLesson('item__lesson6', '6.', l6);
+    WLesson('item__lesson7', '7.', l7);
+    WLesson('item__lesson8', '8.', l8);
 }
 
 

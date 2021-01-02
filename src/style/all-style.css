@@ -1,131 +1,123 @@
 * {
-    font-family: arial;
-    white-space: normal !important;
-    word-wrap: break-word;
-}
-
-.lekcja {
-    color: green;
-}
-
-.lekcja:hover {
-    color: white;
-}
-
-.item {
-    border: 2px solid black;
-    background-color: white;
-    padding: 10px;
-    margin: 10px;
-}
-
-.item:hover {
-    cursor: pointer;
-    background-color: lightcoral;
-    color: white;
-}
-
-.item:hover>.lekcja {
-    color: white;
-}
-
-#dayName {
-    font-size: 40px;
-}
-
-.info {
-    text-align: left;
-    border: 1px solid black;
-    padding: 10px;
-    width: 300px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    background-image: url('../../img/white-logo-zsoit.png');
-}
-
-main {
-    border: 1px solid black;
-    background-image: url('../../img/white-background-logo-zsoit.png');
-    padding: 10px;
-    width: 300px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+  font-family: arial;
+  white-space: normal !important;
+  word-wrap: break-word;
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px;
+}
+
+main {
+  border: 1px solid black;
+  background-image: url("../../img/white-background-logo-zsoit.png");
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.item {
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+  color: white;
+}
+
+.item:hover > .item__paragraph {
+  color: white;
+}
+
+.item__paragraph {
+  color: green;
+}
+
+.item__paragraph:hover {
+  color: white;
+}
+
+#dayName {
+  font-size: 40px;
+}
+
+.info {
+  text-align: left;
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  background-image: url("../../img/white-logo-zsoit.png");
 }
 
 h3 {
-    color: chocolate;
-    font-size: 30px;
+  color: chocolate;
+  font-size: 30px;
 }
 
 a,
-a:visited {
-    color: red;
+a:visited,
+a:focus {
+  color: red;
+  text-decoration: none;
 }
 
 p {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 #df {
-    color: red;
+  color: red;
 }
 
 button {
-    background-color: black;
-    color: white;
-    border-radius: 100%;
-    padding: 12px;
-    margin: 5px;
-    text-decoration: none;
-    display: inline-block;
-    border: none;
-    background-origin: content-box;
-    border: medium none;
-    border-spacing: 0;
-    overflow: visible;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border-radius: 100%;
+  padding: 12px;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  background-origin: content-box;
+  border: medium none;
+  border-spacing: 0;
+  overflow: visible;
 }
 
-button:focus,
-button:hover {
-    background-color: red;
-    color: white;
-    border-radius: 100%;
-    cursor: pointer;
-    outline: 0;
+button:focus, button:hover {
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+  outline: 0;
 }
 
 #avg {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    /* margin-top: 40px; */
-    /* font-size: 90px; */
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 #avg:hover {
-    background-color: red;
-    /* color: black; */
-}
-
-a:visited,
-a {
-    text-decoration: none;
-}
-
-.pItem__foote {
-    padding: 10px;
-    margin-bottom: 10px;
+  background-color: red;
 }
 
 .copyright {
-    font-size: 12px;
-    padding: 10px;
+  font-size: 12px;
+  padding: 10px;
 }
+/*# sourceMappingURL=all-style.css.map */
