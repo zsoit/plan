@@ -67,7 +67,7 @@ const pItems = () => {
     //HTML-ELEMENTS-STATIC
     // showElementsInHTML('title', 'Plan lekcji 3TI - 2021');
 document.title = "Plan lekcji 3TI - 2021";
-showElementsInHTML('.copyright', '&copy 2021 Jakub Achtelik - All Rights Reserved');
+showElementsInHTML('.copyright', '&copy 2021 Jakub Achtelik - All Rights Reserved <br> <br> Vanilla JS App <br> <a href="https://github.com/zsoit/plan">GitHub Code</a>');
 showElementsInHTML('#avg', 'Oblicz swoją średnią');
 showElementsInHTML('#header_now_lesson', 'Aktualna lekcja: ');
 showElementsInHTML('#header_url1', 'ZAWODOWE');

@@ -34,8 +34,8 @@ function Wname(name) {
 
 }
 
-function WLesson(id, nr, lekcja) {
-    document.getElementById(id).innerHTML = nr + lekcja;
+function WLesson(id, nr, lesson) {
+    document.getElementById(id).innerHTML = nr + lesson;
 
 }
 

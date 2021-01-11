@@ -1,5 +1,5 @@
 # Plan lekcji dla 3TI/TU 2021
-### Technologie: JavaScript, HTML, CSS, GIT
+### Technologie: JavaScript, HTML, CSS/(SASS/SCSS), GIT
 Aktualna wersja 3.0 //28.12.2020
 Aktualizacja świąteczna 2.0 //10.12.2020
 Pierwsza wersja 1.0  //5.11.2020
