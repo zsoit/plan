@@ -11,7 +11,8 @@ html {
 
 body {
     padding: 0;
-    background-color: #E0E0E0;
+    // background-color: #E0E0E0;
+    background-color: #F0F0F0;
     margin: 0 0 120px;
 }
 
@@ -27,6 +28,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0 8px 17px -6px gray;
     align-items: center;
     background-color: #F8F8F8;
     &__header {
@@ -58,13 +60,25 @@ body {
     text-align: center;
 }
 
-main {
+.info {
+    text-align: left;
     border-radius: 20px;
-    background-image: url('../../img/white-background-logo-zsoit.png');
+    box-shadow: 3px 3px 5px 6px #ccc;
     padding: 10px;
     width: 300px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:hover {
+        box-shadow: 3px 3px 5px 6px #B0B0B0;
+    }
+}
+
+.background__one {
+    background-image: url('../../img/white-logo-zsoit.png');
+}
+
+.background__two {
+    background-image: url('../../img/white-background-logo-zsoit.png');
 }
 
 .item {
@@ -90,16 +104,6 @@ main {
 
 #dayName {
     font-size: 40px;
-}
-
-.info {
-    text-align: left;
-    border-radius: 20px;
-    padding: 10px;
-    width: 300px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-image: url('../../img/white-logo-zsoit.png');
 }
 
 h3 {
