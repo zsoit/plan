@@ -74,12 +74,16 @@ h1 {
     font-size: 30px;
 }
 
-h1::after {
-    background: url('../../img/basic-logo-zsoit.png');
-    display: inline-block;
-    background-size: 32px 30px;
-    justify-content: right;
-    width: 32px;
-    height: 30px;
-    content: "";
+.nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav__img {
+    width: 35px;
+    height: 36px;
+    margin: 13px;
+    cursor: pointer;
 }

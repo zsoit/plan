@@ -1,13 +1,8 @@
 function nextL(next) {
     document.getElementById('next').innerHTML = 'Następna lekcja: ' + next;
-
 }
 
-let pon1, pon2, pon3, pon4, pon5, pon6, pon7, pon8, pend;
-let wt1, wt2, wt3, wt4, wt5, wt6, wt7, wt8, wtend;
-let sr1, sr2, sr3, sr4, sr5, sr6, sr7, sr8, sredn;
-let czw1, czw2, czw3, czw4, czw5, czw6, czw7, czw8, czwend;
-let pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, ptend;
+let pon1, pon2, pon3, pon4, pon5, pon6, pon7, pon8, pend, wt1, wt2, wt3, wt4, wt5, wt6, wt7, wt8, wtend, sr1, sr2, sr3, sr4, sr5, sr6, sr7, sr8, sredn, czw1, czw2, czw3, czw4, czw5, czw6, czw7, czw8, czwend, pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, ptend;
 let wolne = l.ALL.Wolne;
 
 function checkMyLesson(a) {
@@ -25,10 +20,19 @@ function checkMyLesson(a) {
     else if (a == l.ALL.Polski) all.Polski();
     else if (a == l.ALL.HIS) all.HIS();
     else if (a == l.ALL.WF) all.WF();
+    else if (a == l.ALL.WDZ) all.WDZ();
     else if (a == l.ALL.Wychowawcza) all.Wychowawcza();
     else if (a == l.ALL.Wolna) all.Wolna();
     else if (a == l.ALL.Wolne) all.Wolne();
+    else if (a == l.ALL.Religia) all.Religia();
     else if (a == l.ALL.EndLesson) all.NextEndLesson();
+    else if (a == l.TU.PodstawyKosztorysowania) tu.PodstawyKosztorysowania();
+    else if (a == l.TU.SEO) tu.SEO();
+    else if (a == l.TU.AngieslkiWBudownictwie) tu.AngieslkiWBudownictwie();
+    else if (a == l.TU.MontazSEO) tu.MontazSEO();
+    else if (a == l.TU.ObslugaSEO) tu.ObslugaSEO();
+    else if (a == l.TU.TechnologiaSEO) tu.TechnologiaSEO();
+    else if (a == l.TU.KosztorysowanieWBudownictwie) tu.KosztorysowanieWBudownictwie();
     else a == a;
 }
 

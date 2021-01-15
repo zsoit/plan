@@ -30,7 +30,7 @@ const all = {
         return p(link[6], link[6], lection[7], teacher[6]);
     },
     WF() {
-        return p(link[8], link[8], lection[13], teacher[10]);
+        return p(link[8], link[15], lection[13], teacher[10]);
     },
     HIS() {
         return p(link[9], link[9], lection[14], teacher[9]);
@@ -41,6 +41,13 @@ const all = {
     },
     Wolne() {
         return p('', '', lection[15], teacher[19]);
+    },
+
+    WDZ() {
+        p(link[4], link[4], lection[27], teacher[4]);
+    },
+    Religia() {
+        p(link[8], link[15], lection[26], teacher[21]);
     },
     EndLesson() {
         document.getElementById('df').style.display = "none";
@@ -79,25 +86,25 @@ const ti = {
 
 //TU
 const tu = {
-    PKwBudownictwie() {
+    PodstawyKosztorysowania() {
         return p(link[13], link[13], lection[19], teacher[14]);
     },
     SEO() {
         return p(link[12], link[12], lection[20], teacher[15]);
     },
-    AngielskiwBudownictwie() {
+    AngieslkiWBudownictwie() {
         return p(link[3], link[3], lection[21], teacher[3]);
     },
-    TechnologiaMontazuSEO() {
-        return p("/", link[8], lection[22], teacher[16]);
+    TechnologiaSEO() {
+        return p(link[8], link[15], lection[22], teacher[16]);
     },
-    Kosztorysowanie() {
+    KosztorysowanieWBudownictwie() {
         return p(link[13], link[13], lection[23], teacher[14]);
     },
     MontazSEO() {
-        return p("/", link[8], lection[24], teacher[16]);
+        return p(link[8], link[15], lection[24], teacher[16]);
     },
     ObslugaSEO() {
-        return p("/", link[8], lection[25], teacher[16]);
+        return p(link[8], link[15], lection[25], teacher[16]);
     },
 }

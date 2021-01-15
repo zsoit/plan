@@ -10,22 +10,206 @@
     <meta name="description" content="Plan lekcji dla 3TU">
     <meta name="author" content="Jakub Achtelik">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/logo/basic-logo-zsoit.png">
+    <link rel="shortcut icon" href="img/basic-logo-zsoit.png">
     <link rel="image_src" href="img/fb.png" />
     <meta property="og:image" content="img/fb.png" />
-    <link rel="icon" href="img/cap.png">
-
-    <title>Plan lekcji 3TU</title>
-
+    <link rel="icon" href="img/basic-logo-zsoit.png">
+    <title>Plan lekcji 3TU - 2021</title>
 </head>
 
 <body>
+    <nav class="navigation">
+        <img onclick="window.location.href='/' " class="navigation__image" src="img/basic-logo-zsoit.png" alt="">
+        <h1 class="navigation__header">Plan lekcji 3TU 2021</h1>
+        <img onclick="window.location.href='/tu-srednia' " class="navigation__image__calc" src="img/calc.png" alt="">
+    </nav>
 
-    <div class="info">
-        <h3>Plan w budowie!</h3>
-        <p>Z powodu zmianu planu aktualizujemy stronę. Przepraszamy za utrudnienia. :(</p>
+    <div class="container-flex">
+        <!--Info -->
+        <div class="info background__one">
+            <h3 id="header_now_lesson"></h3>
+            <p id="lection"></p>
+            <!-- info_about_teacher_primary -->
+            <p id="teacher"></p>
+            <a id="link" target="_blank" href=""></a>
+            <!-- info_about_teacher_extended -->
+            <p id="teacher1"></p>
+            <a id="link1" target="_blank" href=""></a>
+            <!-- info_about_lesson -->
+            <p id="weekday"> </p>
+            <p id="hourLesson"></p>
+            <p id="hour"></p>
+            <p id="df"></p>
+            <p id="next"></p>
+        </div>
+
+        <!-- Day -->
+        <main class="info background__two">
+            <button id="mon">Pn.</button>
+            <button id="tue">Wt.</button>
+            <button id="wed">Śr.</button>
+            <button id="thu">Cz.</button>
+            <button id="fri">Pt.</button>
+
+            <p id="dayName">
+
+            </p>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson1">
+                    <div class="h" id="1h"></div>
+                </p>
+            </div>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson2">
+                    <div class="h" id="2h"></div>
+                </p>
+
+            </div>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson3">
+                    <div class="h" id="3h"></div>
+                </p>
+
+            </div>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson4">
+                    <div class="h" id="4h"></div>
+                </p>
+
+            </div>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson5">
+                    <div class="h" id="5h"></div>
+                </p>
+            </div>
+
+            <div class="item">
+
+                <p class="item__paragraph" id="item__lesson6">
+                    <div class="h" id="6h"></div>
+                </p>
+            </div>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson7">
+                    <div class="h" id="7h"></div>
+                </p>
+
+            </div>
+
+            <div class="item">
+                <p class="item__paragraph" id="item__lesson8">
+                    <div class="h" id="8h"></div>
+                </p>
+            </div>
+        </main>
+
+        <!--  URLs -->
+        <div class="info background__one">
+            <div class="cisco">
+
+                <h3 id="header_url1"></h3>
+                <div class="zawodowe">
+
+                    <div class="cisco__person"> <b class="am_name"></b> <br>
+                        <a class="cisco__link am_url" href="" target="_blank"></a>
+                    </div>
+                    <div class="cisco__person"><b class="pp_name"></b> <br>
+                        <a class="cisco__link pp_url" href="" target="_blank"></a>
+                    </div>
+                    <div class="cisco__person"><b class="rd_name"></b> <br>
+                        <a class="cisco__link rd_url" href="" target="_blank"></a>
+                    </div>
+
+                    <div class="cisco__person"> <b class="pk_name"></b> <br>
+                        <a class="cisco__link pk_url" href="" target="_blank"></a>
+                    </div>
+                </div>
+                <br>
+                <h3 id="header_url2"></h3>
+                <div class="inne">
+                    <div class="cisco__person"> <b class="lk_name"></b> <br>
+                        <a class="cisco__link lk_url" href="" target="_blank"></a>
+                    </div>
+                    <div class="cisco__person"><b class="mm_name"></b> <br>
+                        <a class="cisco__link mm_url" href="" target="_blank"></a>
+                    </div>
+
+                    <div class="cisco__person"><b class="bs_name"></b> <br>
+                        <a class="cisco__link bs_url" href="" target="_blank"></a>
+                    </div>
+
+                    <div class="cisco__person"> <b class="ab_name"></b> <br>
+                        <a class="cisco__link ab_url" href="" target="_blank"></a>
+                    </div>
+
+                    <div class="cisco__person"> <b class="kz_name"></b> <br>
+                        <a class="cisco__link kz_url" href="" target="_blank"></a>
+                    </div>
+
+                    <div class="cisco__person"><b class="al_name"></b> <br>
+                        <a class="cisco__link al_url" href="" target="_blank"></a>
+                    </div>
+
+                    <div class="cisco__person"><b class="mom_name"></b> <br>
+                        <a class="cisco__link mom_url" href="" target="_blank"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Items -->
+        <div class="info background__one">
+            <h3 id="header_items"></h3>
+            <ol>
+                <li id="pItem1"></li>
+                <li id="pItem2"></li>
+                <li id="pItem3"></li>
+                <li id="pItem4"></li>
+                <li id="pItem5"></li>
+                <li id="pItem6"></li>
+                <li id="pItem7"></li>
+                <li id="pItem9"></li>
+                <li id="pItem10"></li>
+                <li id="pItem11"></li>
+                <li id="pItem12"></li>
+                <li id="pItem13"></li>
+                <li id="pItem14"></li>
+                <li id="pItem15"></li>
+                <li id="pItem16"></li>
+            </ol>
+            <p id="pItem__footer"></p> <br>
+
+            <a href="https://plan.3ti.pl/tu-srednia" target="_blank" id="avg"></a> <br><br>
+        </div>
     </div>
 
+    <footer class="footer">
+        <p class="copyright"></p>
+    </footer>
+
+
+    <input type="text" id="checkClassHTML" value="TU" style="display: none">
+
+    <script src="src/bin/items.js"></script>
+    <script src="src/bin/arrays.js"></script>
+    <script src="src/bin/plane.js"></script>
+
+    <script src="src/etc/config.js"></script>
+    <script src="src/etc/main.js"></script>
+    <script src="src/etc/week.js"></script>
+    <script src="src/etc/showInHTML.js"></script>
+
+    <script src="src/plugins/snow.js"></script>
+    <script src="src/plugins/ie.js"></script>
 </body>
 
 </html>

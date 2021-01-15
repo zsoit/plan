@@ -20,7 +20,10 @@
 
 <body>
     <center>
-        <h1>Średnia ocen dla III TU </h1>
+        <nav class="nav">
+            <h1 class="nav__header">Średnia ocen dla III TU </h1>
+            <img class="nav__img" onclick="window.location.href='/' " class="navigation__image" src="img/basic-logo-zsoit.png" alt="">
+        </nav>
         <table border="0">
             <thead>
                 <tr>
@@ -89,6 +92,22 @@
                 <tr>
                     <td id="Item15"></td>
                     <td><input type="number" class="grade" min="1" max="6" id="p15" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <form name="type" width="20px">
+                            <label style="float: left;" for="type">Zachowanie: </label>
+                            <select style="float: right; padding: 5px">
+                                <option>Wzorowe</option>
+                                <option>Bardzo dobre</option>
+                                <option>Dobre</option>
+                                <option>Poprawne</option>
+                                <option>Nieodpowiednie</option>
+                                <option>Naganne</option>
+                        </select>
+                        </form>
+                    </td>
                 </tr>
             </tbody>
             <tr class="no-print">

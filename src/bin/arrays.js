@@ -29,6 +29,7 @@ const lection = [
     "Montaż systemów energetyki", //24
     "Obsługa systemów energetyki odnawialnej", //25 7 //rozni
     "Religia", //26
+    "Wychowanie do życia w rodzinie" //27
 ];
 
 const link = [
@@ -47,7 +48,8 @@ const link = [
     // LINKI DLA TU
     "https://teams.microsoft.com/_#/school/conversations/Og%C3%B3lny?threadId=19:bccbea7f4c094a21a3624f739647963a@thread.tacv2&ctx=channel.", //12
     "https://zsoitmiastko.webex.com/join/andrzej.mynio ", //13
-    "https://zsoitmiastko.webex.com/join/kwiatek901208 " //14
+    "https://zsoitmiastko.webex.com/join/kwiatek901208 ", //14
+    "/" //15
 
 
 ];
@@ -75,6 +77,7 @@ const teacher = [
     "Roman Dykyj", //18
     "brak", //19
     "Iwona Muła", //20
+    "Marek Wiśniewski" //21
 ];
 
 
@@ -105,9 +108,22 @@ const l = {
         Wolne: lection[15],
         EndLesson: "Koniec lekcji",
         Wychowawcza: lection[17],
+        WDZ: lection[27],
+    },
+
+    TU: {
+        PodstawyKosztorysowania: lection[19],
+        SEO: lection[20],
+        AngieslkiWBudownictwie: lection[21],
+        TechnologiaSEO: lection[22],
+        KosztorysowanieWBudownictwie: lection[23],
+        MontazSEO: lection[24],
+        ObslugaSEO: lection[25],
+
     }
 
 }
+
 
 
 function hourN(string) {
