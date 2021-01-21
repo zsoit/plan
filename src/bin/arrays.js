@@ -99,7 +99,7 @@ const l = {
     },
     ALL: {
         Angielski: lection[4],
-        Niemiecki: lection[4],
+        Niemiecki: lection[5],
         Polski: lection[6],
         Matematyka: lection[7],
         HIS: lection[14],
