@@ -51,8 +51,8 @@ const weekPlaneTI = () => {
 }
 
 const weekPlaneTU = () => {
-    pon1 = l.TU.SEO;
-    pon2 = l.TU.PodstawyKosztorysowania;
+    pon1 = l.TU.PodstawyKosztorysowania;
+    pon2 = l.TU.SEO;
     pon3 = l.ALL.Niemiecki;
     pon4 = l.ALL.WDZ;
     pon5 = l.ALL.Matematyka;

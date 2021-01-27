@@ -201,7 +201,6 @@ const weekDay = () => {
             breakFun();
         } else if (hour == 12 && minute >= 15 && minute <= 19) {
             minute = minute - 20;
-            minute = -minute;
             breakFun();
         } else if (hour == 13 && minute >= 5 && minute <= 9) {
             minute = minute - 10;
