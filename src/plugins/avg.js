@@ -39,11 +39,8 @@ function ItemsTU() {
 }
 
 let className = document.getElementById("checkClass").value;
-if (className == "TI") {
-    ItemsTI();
-} else {
-    ItemsTU();
-}
+if (className == "TI") ItemsTI();
+else ItemsTU();
 
 function main() {
     document.getElementById("print").style.display = "block";
@@ -75,13 +72,9 @@ function main() {
         }
     }
 
-    for (let i = 0; i < tab.length; i++) {
-        sum += tab[i]
-    }
+    for (let i = 0; i < tab.length; i++) sum += tab[i];
 
-    for (let i = 0; i <= 7; i++) {
-        sumPro += tab[i];
-    }
+    for (let i = 0; i <= 7; i++) sumPro += tab[i];
 
     let result = sum / d;
     let resultPro = sumPro / 8;

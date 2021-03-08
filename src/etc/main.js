@@ -4,75 +4,46 @@ const weekDay = () => {
     let hour = new Date().getHours();
     let minute = new Date().getMinutes();
     let day = new Date().getDay();
-
-    let hours = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
-
-    let minutes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60];
-
     let df; //zmienna, ktora przechowuje roznice, w minutach (od ang. DiFfrence)
 
     // day = 3;
-    // hour = 9;
-    // minute = 41;
+    // hour = 11;
+    // minute = 22;
+
+    const dfHTML = document.getElementById("df");
+    const weekdayHTML = document.getElementById('weekday');
+    const hourHTML = document.getElementById('hour');
+
+    const callAndDF = (hours, minutes, hourLessFun, lFun) => {
+        df = -((hour * 60 + minute) - (hours * 60 + minutes));
+        hourLessFun();
+        return lFun();
+    }
 
     function lessons(l1, l2, l3, l4, l5, l6, l7, l8) {
-        if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) {
-            df = (hour * 60 + minute) - (hours[8] * 60 + minutes[45]);
-            df = -df;
-            hourLesson1();
-            return l1();
-        } else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) {
-            df = (hour * 60 + minute) - (hours[9] * 60 + minutes[35]);
-            df = -df;
-            hourLesson2();
-            return l2();
-        } else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) {
-            df = (hour * 60 + minute) - (hours[10] * 60 + minutes[25]);
-            df = -df;
-            hourLesson3();
-            return l3();
-        } else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) {
-            df = (hour * 60 + minute) - (hours[11] * 60 + minutes[25]);
-            df = -df;
-            hourLesson4();
-            return l4();
-        } else if (hour == 11 && minute >= 25 || hour == 12 && minute < 15) {
-            df = (hour * 60 + minute) - (hours[12] * 60 + minutes[15]);
-            df = -df;
-            hourLesson5();
-            return l5();
-        } else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) {
-            df = (hour * 60 + minute) - (hours[13] * 60 + minutes[5]);
-            df = -df;
-            hourLesson6();
-            return l6();
-
-        } else if (hour == 13 && minute <= 54) {
-            df = (hour * 60 + minute) - (hours[13] * 60 + minutes[55]);
-            df = -df;
-            hourLesson7();
-            return l7();
-
-        } else if (hour == 13 && minute >= 55 || hour == 14 && minute < 45) {
-            df = (hour * 60 + minute) - (hours[14] * 60 + minutes[45]);
-            df = -df;
-            hourLesson8();
-            return l8();
-        } else {
-            document.getElementById('df').style.display = "none";
-            document.getElementById('weekday').innerHTML = "Koniec lekcji na dziś, wróć jutro!";
+        if (hour == 8 && minute >= 00 && minute < 45 || hour == 7 && minute <= 59) callAndDF(8, 45, hourLesson1, l1);
+        else if (hour == 8 && minute <= 50 || hour == 8 && minute >= 45 || hour == 9 && minute < 35) callAndDF(9, 35, hourLesson2, l2);
+        else if (hour == 9 && minute >= 35 || hour == 10 && minute < 25) callAndDF(10, 25, hourLesson3, l3);
+        else if (hour == 10 && minute >= 25 || hour == 11 && minute < 25) callAndDF(11, 25, hourLesson4, l4);
+        else if (hour == 11 && minute >= 25 || hour == 12 && minute < 15) callAndDF(12, 15, hourLesson5, l5);
+        else if (hour == 12 && minute >= 15 || hour == 13 && minute < 05) callAndDF(13, 5, hourLesson6, l6);
+        else if (hour == 13 && minute <= 54) callAndDF(13, 55, hourLesson7, l7);
+        else if (hour == 13 && minute >= 55 || hour == 14 && minute < 45) callAndDF(14, 45, hourLesson8, l8);
+        else {
+            dfHTML.style.display = "none";
+            weekdayHTML.innerHTML = "Koniec lekcji na dziś, wróć jutro!";
         }
     }
 
     function dayHeader(dayName) {
-        document.getElementById('weekday').innerHTML = " Dzień: " + dayName;
+        weekdayHTML.innerHTML = `Dzień: ${dayName}`;
     }
 
     switch (day) {
         case 0:
             {
                 dayHeader("Dziś jest niedziela co oznacza brak lekcji!");
-                document.getElementById('df').style.display = "none";
+                dfHTML.style.display = "none";
                 break;
             }
         case 1:
@@ -109,7 +80,7 @@ const weekDay = () => {
         case 6:
             {
                 dayHeader("Dziś jest sobota co oznacza brak lekcji!");
-                document.getElementById('df').style.display = "none";
+                dfHTML.style.display = "none";
                 break;
             }
 
@@ -117,21 +88,10 @@ const weekDay = () => {
 
     //Odliczanie czasu do końca lekcji
     const timeToEndLesson = () => {
-        if (df >= 60 && df < 120) {
-            df = df - 60;
-            df = "1 godz. " + df;
-        } else if (df >= 120 && df < 120) {
-            df = df - 120;
-            df = "2 godz. " + df;
-        } else if (df >= 180 && df > 180) {
-            df = df - 180;
-            df = "3 godz. " + df;
-        } else if (df == undefined) {
-            df = 'Brak lekcji! 0'
-
-        } else {
-            df = df;
-        }
+        if (df >= 60 && df < 120) df = `1 godz. ${df-60}`;
+        else if (df >= 120 && df < 120) df = `2 godz. ${df-120}`;
+        else if (df >= 180 && df > 180) df = `3 godz. ${df-180}`;
+        else if (df == undefined) df = 'Brak lekcji! 0';
     }
     timeToEndLesson();
 
@@ -142,8 +102,8 @@ const weekDay = () => {
             var start;
 
             function zerosix() {
-                document.getElementById('df').style.display = "none";
-                document.getElementById('weekday').innerHTML = "Lekcja rozpocznie się za " + start + " godz. ";
+                dfHTML.style.display = "none";
+                weekdayHTML.innerHTML = "Lekcja rozpocznie się za " + start + " godz. ";
             }
             if (min == 0) {
                 start = 8 - hour;
@@ -169,57 +129,32 @@ const weekDay = () => {
     //DODAWANIE ZERA DO WYSIETLANIA, JEZELI MINUTA JEST mnijesz od 10
     let minuteShow = minute;
     const nowHour = () => {
-        if (minuteShow < 10) {
-            minuteShow = "0" + minuteShow;
-        }
-        document.getElementById('hour').innerHTML = 'Aktualna godzina: ' + hour + ':' + minuteShow;
-        df = df + ' min. do końca lekcji';
+        if (minuteShow < 10) minuteShow = `0${minuteShow}`;
+        hourHTML.innerHTML = `Aktualna godzina: ${hour}:${minuteShow}`;
+        df += ' min. do końca lekcji';
     }
     nowHour();
 
 
     //PRZERWA
     const breakCount = () => {
-        let breakVar;
-
-        function breakFun() {
-            minute = -minute;
-            breakVar = minute;
-            df = breakVar + ' min. do końca przerwy';
+        function minutesBreak(x) {
+            return df = `${-(minute - x)} min. do końca przerwy`;
         }
-        if (hour == 8 && minute >= 45 && minute <= 49 == true) {
-            minute = minute - 50;
-            breakFun();
-        } else if (hour == 9 && minute >= 35 && minute <= 39 == true) {
-            minute = minute - 40;
-            breakFun();
-        } else if (hour == 10 && minute >= 25 && minute <= 39 == true) {
-            minute = minute - 40;
-            breakFun();
-        } else if (hour == 11 && minute >= 25 && minute <= 29 == true) {
-            minute = minute - 30;
-            breakFun();
-        } else if (hour == 12 && minute >= 15 && minute <= 19) {
-            minute = minute - 20;
-            breakFun();
-        } else if (hour == 13 && minute >= 5 && minute <= 9) {
-            minute = minute - 10;
-            breakFun();
-        } else if (hour == 13 && minute >= 55 && minute <= 59) {
-            minute = minute - 60;
-            breakFun();
-        } else if (hour == 14 && minute >= 45 && minute <= 49) {
-            minute = minute - 50;
-            breakFun();
-        } else if (hour == 7 && minute >= 0 && minute <= 59) {
-            minute = minute - 60;
-            breakFun();
-        }
+        if (hour == 8 && minute >= 45 && minute <= 49) minutesBreak(50);
+        else if (hour == 9 && minute >= 35 && minute <= 39) minutesBreak(40);
+        else if (hour == 10 && minute >= 25 && minute <= 39) minutesBreak(40);
+        else if (hour == 11 && minute >= 25 && minute <= 29) minutesBreak(30);
+        else if (hour == 12 && minute >= 15 && minute <= 19) minutesBreak(20);
+        else if (hour == 13 && minute >= 5 && minute <= 9) minutesBreak(10);
+        else if (hour == 13 && minute >= 55 && minute <= 59) minutesBreak(60);
+        else if (hour == 14 && minute >= 45 && minute <= 49) minutesBreak(50)
+        else if (hour == 7 && minute >= 0 && minute <= 59) minutesBreak(60);
     }
     breakCount();
 
-    document.getElementById("df").innerHTML =
-        "Zostało: " + df;
+
+    dfHTML.innerHTML = `Zostało ${df}`;
 
 }
 weekDay();

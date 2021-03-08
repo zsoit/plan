@@ -31,7 +31,6 @@ hourH('8h', '14:00 - 14:45');
 
 function Wname(name) {
     document.getElementById('dayName').innerHTML = name;
-
 }
 
 function WLesson(id, nr, lesson) {

@@ -129,35 +129,23 @@ const l = {
 function hourN(string) {
     document.getElementById("hourLesson").innerHTML = string;
 }
-const hourLesson1 = () => {
-    hourN("Lekcja 1: 8.00 - 8:45")
-}
+const hourLesson1 = () => hourN("Lekcja 1: 8.00 - 8:45");
 
-const hourLesson2 = () => {
-    hourN("Lekcja 2: 8.50 - 9:35");
-}
+const hourLesson2 = () => hourN("Lekcja 2: 8.50 - 9:35");
 
-const hourLesson3 = () => {
-    hourN("Lekcja 3: 9.40 - 10:25");
 
-}
+const hourLesson3 = () => hourN("Lekcja 3: 9.40 - 10:25");
 
-const hourLesson4 = () => {
-    hourN("Lekcja 4: 10:40 - 11:25");
-}
 
-const hourLesson5 = () => {
-    hourN("Lekcja 5: 11:30 - 12:15");
-}
+const hourLesson4 = () => hourN("Lekcja 4: 10:40 - 11:25");
 
-const hourLesson6 = () => {
-    hourN("Lekcja 6: 12:20 - 13:05");
-}
 
-const hourLesson7 = () => {
-    hourN("Lekcja 7: 13:10 - 13:55");
-}
+const hourLesson5 = () => hourN("Lekcja 5: 11:30 - 12:15");
 
-const hourLesson8 = () => {
-    hourN("Lekcja 8: 14:00 - 14:45");
-}
+
+const hourLesson6 = () => hourN("Lekcja 6: 12:20 - 13:05");
+
+const hourLesson7 = () => hourN("Lekcja 7: 13:10 - 13:55");
+
+
+const hourLesson8 = () => hourN("Lekcja 8: 14:00 - 14:45");
