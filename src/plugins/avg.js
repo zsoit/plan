@@ -122,3 +122,12 @@ function main() {
     showHTML('#name', 'Uczeń: ' + name);
     showHTML("#items", 'Liczba przedmiotów: ' + d);
 }
+
+const btn__main = document.getElementById('btn__main');
+btn__main.addEventListener('click', () => main())
+
+const print = document.getElementById('print');
+print.addEventListener('click', () => {
+    window.print();
+    return false
+})

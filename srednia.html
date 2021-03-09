@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60">
     <meta name="description" content="Średnia ocen dla dla 3TI">
     <meta name="author" content="Jakub Achtelik">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +18,7 @@
 </head>
 
 <body>
-    <center>
+    <div class="container">
         <nav class="nav">
             <h1 class="nav__header">Średnia ocen dla III TI </h1>
             <img class="nav__img" onclick="window.location.href='/' " class="navigation__image" src="img/basic-logo-zsoit.png" alt="">
@@ -99,13 +98,13 @@
                         <form name="type" width="20px">
                             <label style="float: left;" for="type">Zachowanie: </label>
                             <select style="float: right; padding: 5px">
-                                <option>Wzorowe</option>
-                                <option>Bardzo dobre</option>
-                                <option>Dobre</option>
-                                <option>Poprawne</option>
-                                <option>Nieodpowiednie</option>
-                                <option>Naganne</option>
-                        </select>
+                                    <option>Wzorowe</option>
+                                    <option>Bardzo dobre</option>
+                                    <option>Dobre</option>
+                                    <option>Poprawne</option>
+                                    <option>Nieodpowiednie</option>
+                                    <option>Naganne</option>
+                            </select>
                         </form>
                     </td>
                 </tr>
@@ -121,22 +120,28 @@
         </table>
 
         <br />
+        <div class="btn-wrapper">
+            <button id="btn__main">Wynik</button>
 
-        <button id="btn__main" onclick="main()">Wynik</button>
+            <div id="info">
+                <p id="name"></p>
+                <p id="class"></p>
+                <p id="result"></p>
+                <p id="resultPro"></p>
+                <p id="items"></p>
+                <p id="itemsPro"></p>
+            </div>
 
-        <div id="info">
-            <p id="name"></p>
-            <p id="class"></p>
-            <p id="result"></p>
-            <p id="resultPro"></p>
-            <p id="items"></p>
-            <p id="itemsPro"></p>
+            <br />
+            <button class="no-print" id="print">
+                    <i class="fas fa-print"></i> Wyrukuj
+            </button>
         </div>
 
-        <br />
-        <button class="no-print" id="print" onclick="window.print();return false">
-        <i class="fas fa-print"></i> Wyrukuj</button>
-    </center>
+
+    </div>
+
+
     <input type="text" id="checkClass" value="TI" style="display: none">
     <script src="src/bin/arrays.js"></script>
     <script src="src/plugins/avg.js"></script>
