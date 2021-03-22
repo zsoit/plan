@@ -7,14 +7,14 @@ const weekDay = () => {
     let df; //zmienna, ktora przechowuje roznice, w minutach (od ang. DiFfrence)
 
     day = 2;
-    hour = 11;
+    hour = 12;
     minute = 22;
 
     const dfHTML = document.getElementById("df");
     const weekdayHTML = document.getElementById('weekday');
     const hourHTML = document.getElementById('hour');
 
-    const callAndDF = (hours, minutes, hourLessFun, lFun) => {
+    function callAndDF(hours, minutes, hourLessFun, lFun) {
         df = -((hour * 60 + minute) - (hours * 60 + minutes));
         hourLessFun();
         return lFun();
@@ -86,24 +86,23 @@ const weekDay = () => {
 
     }
 
-    //Odliczanie czasu do końca lekcji
+    //odliczanie czasu do końca lekcji
     const timeToEndLesson = () => {
         if (df >= 60 && df < 120) df = `1 godz. ${df-60}`;
         else if (df >= 120 && df < 120) df = `2 godz. ${df-120}`;
         else if (df >= 180 && df > 180) df = `3 godz. ${df-180}`;
         else if (df == undefined) df = 'Brak lekcji! 0';
     }
-    timeToEndLesson();
 
     //polnoc-6-rano
     const zeroSixHour = () => {
         if (hour <= 6 && hour >= 0) {
-            var min = minute;
-            var start;
+            let min = minute;
+            let start;
 
             function zerosix() {
                 dfHTML.style.display = "none";
-                weekdayHTML.innerHTML = "Lekcja rozpocznie się za " + start + " godz. ";
+                weekdayHTML.innerHTML = `Lekcja rozpocznie się za ${start} godz. `;
             }
             if (min == 0) {
                 start = 8 - hour;
@@ -119,24 +118,18 @@ const weekDay = () => {
                 min = 60 - minute;
                 zerosix();
             }
-
-
         }
     }
-    zeroSixHour();
 
     //aktualna-godizna
-    //DODAWANIE ZERA DO WYSIETLANIA, JEZELI MINUTA JEST mnijesz od 10
-    let minuteShow = minute;
     const nowHour = () => {
+        let minuteShow = minute;
         if (minuteShow < 10) minuteShow = `0${minuteShow}`;
         hourHTML.innerHTML = `Aktualna godzina: ${hour}:${minuteShow}`;
         df += ' min. do końca lekcji';
     }
-    nowHour();
 
-
-    //PRZERWA
+    //przerwa
     const breakCount = () => {
         function minutesBreak(x) {
             return df = `${-(minute - x)} min. do końca przerwy`;
@@ -151,8 +144,12 @@ const weekDay = () => {
         else if (hour == 14 && minute >= 45 && minute <= 49) minutesBreak(50)
         else if (hour == 7 && minute >= 0 && minute <= 59) minutesBreak(60);
     }
-    breakCount();
 
+    // FUNCTION_CALL
+    timeToEndLesson();
+    zeroSixHour();
+    nowHour();
+    breakCount();
 
     dfHTML.innerHTML = `Zostało ${df}`;
 

@@ -1,5 +1,5 @@
 function nextL(next) {
-    document.getElementById('next').innerHTML = 'Następna lekcja: ' + next;
+    document.getElementById('next').innerHTML = `Następna lekcja: ${next}`;
 }
 
 let pon1, pon2, pon3, pon4, pon5, pon6, pon7, pon8, pend, wt1, wt2, wt3, wt4, wt5, wt6, wt7, wt8, wtend, sr1, sr2, sr3, sr4, sr5, sr6, sr7, sr8, sredn, czw1, czw2, czw3, czw4, czw5, czw6, czw7, czw8, czwend, pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, ptend;
