@@ -6,9 +6,9 @@ const weekDay = () => {
     let day = new Date().getDay();
     let df; //zmienna, ktora przechowuje roznice, w minutach (od ang. DiFfrence)
 
-    // day = 3;
-    // hour = 11;
-    // minute = 22;
+    day = 2;
+    hour = 11;
+    minute = 22;
 
     const dfHTML = document.getElementById("df");
     const weekdayHTML = document.getElementById('weekday');
