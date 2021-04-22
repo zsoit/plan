@@ -29,7 +29,8 @@ const lection = [
     "Montaż systemów energetyki", //24
     "Obsługa systemów energetyki odnawialnej", //25 7 //rozni
     "Religia", //26
-    "Wychowanie do życia w rodzinie" //27
+    "Wychowanie do życia w rodzinie", //27
+    "Praktyka zawodowa" //28
 ];
 
 const link = [

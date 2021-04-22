@@ -4,12 +4,6 @@ body {
     justify-content: center;
 }
 
-.btn-wrapper {
-    /* display: flex; */
-    justify-content: center;
-    margin-left: 50px;
-}
-
 table {
     padding: 10px;
 }
