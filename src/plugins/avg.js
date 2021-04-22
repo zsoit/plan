@@ -50,9 +50,8 @@ function ItemsTU() {
 if (checkClass == "TI") ItemsTI();
 else ItemsTU();
 
-
 function main() {
-    const name = document.getElementById("nameOfStudent").value;
+    let name = document.getElementById("nameOfStudent").value;
     print.style.display = "block";
     info.style.display = "block";
     const tab = [];
@@ -62,7 +61,7 @@ function main() {
     let d = 0;
     let sum = 0;
     let sumPro = 0;
-    let result;
+    let result = 0;
     let resultPro = 0;
 
     function divisor(a) {

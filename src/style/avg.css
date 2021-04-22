@@ -88,3 +88,7 @@ h1 {
     margin: 13px;
     cursor: pointer;
 }
+
+.btn-wrapper {
+    margin-top: 20px;
+}
