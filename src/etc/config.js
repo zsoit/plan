@@ -4,9 +4,9 @@ const weekPlaneTI = () => {
     pon3 = l.ALL.Niemiecki;
     pon4 = l.ALL.WDZ;
     pon5 = l.ALL.Matematyka;
-    pon6 = l.TI.BF.SBD;
+    pon6 = l.ALL.Polski;
     pon7 = l.ALL.Angielski;
-    pon8 = l.ALL.Polski;
+    pon8 = l.ALL.Angielski;
     ponend = l.ALL.EndLesson;
 
     wt1 = l.TI.BF.Sieci;
@@ -20,26 +20,26 @@ const weekPlaneTI = () => {
     wtend = l.ALL.EndLesson;
 
     sr1 = l.ALL.Matematyka;
-    sr2 = l.ALL.Polski;
-    sr3 = l.ALL.Wychowawcza;
-    sr4 = l.ALL.Matematyka;
+    sr2 = l.ALL.HIS;
+    sr3 = l.ALL.Matematyka;
+    sr4 = l.ALL.Wychowawcza;
     sr5 = l.TI.EL.Witryny;
     sr6 = l.TI.EL.Witryny;
     sr7 = l.ALL.Polski;
-    sr8 = l.ALL.WF;
+    sr8 = l.ALL.Polski;
     srend = l.ALL.EndLesson;
 
     czw1 = l.TI.BF.Sieci;
     czw2 = l.ALL.Polski;
-    czw3 = l.ALL.Niemiecki;
-    czw4 = l.ALL.Matematyka;
-    czw5 = l.ALL.WF;
-    czw6 = l.ALL.HIS;
+    czw3 = l.ALL.Matematyka;
+    czw4 = l.ALL.WF;
+    czw5 = l.ALL.Niemiecki;
+    czw6 = l.TI.BF.SBD;
     czw7 = l.ALL.Wolne;
     czw8 = l.ALL.Wolne;
     czwend = l.ALL.EndLesson;
 
-    pt1 = l.ALL.Angielski;
+    pt1 = l.ALL.WF;
     pt2 = l.ALL.WF;
     pt3 = l.ALL.Angielski;
     pt4 = l.TI.BF.ABD;

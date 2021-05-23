@@ -46,7 +46,6 @@ function ItemsTU() {
     Item('#Item16', lection[26]);
 
 }
-
 if (checkClass == "TI") ItemsTI();
 else ItemsTU();
 
